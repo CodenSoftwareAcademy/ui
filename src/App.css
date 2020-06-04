@@ -11,12 +11,12 @@
 .a3 {
   width: 100%;
   height: 100vh;
-  background: #f8f8f8;
+  background: #fafafa;
 }
 .section-a {
   width: 100%;
   height: 100vh;
-  background: #eee;
+  background: #fafafa;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -24,7 +24,7 @@
 }
 .section {
   width: 100%;
-  background: #eee;
+  background: #fafafa;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -32,13 +32,13 @@
 }
 
 .site-container {
-  background-color: #eee;
+  background-color: #fafafa;
   scroll-behavior: smooth;
 }
 
 .nav {
   width: 100%;
-  background-color: #eee;
+  background-color: #fafafa;
   display:  flex;
   flex-direction: row;
   justify-content: space-between;
@@ -93,10 +93,17 @@
 }
 
 .menu a#apply-btn {
-  background: #234d6d;
-  padding: 10px;
-  color: white;
+  background: #fafafa;
+  padding: 7px;
+  color: #234d6d;
+  border: 3px solid #234d6d;
   border-radius: 7px;
+  font-weight: bold;
+}
+
+.menu a#apply-btn:hover {
+  background: #234d6d;
+  color: #fafafa;
 }
 
 .logo {
@@ -121,17 +128,19 @@
 
 .headline {
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   background-image: url("./cover4.png");
   background-size: cover;
+  justify-content: center;
 }
 
 .headline h1 {
-  font-size: 5em;
+  font-size: 3em;
   text-align: center;
   font-weight: bold;
-  color: #eee;
+  color: #fafafa;
 }
 
 .chapter {
@@ -161,8 +170,69 @@
   padding: 1.35rem !important;
 }
 
+/* td {
+  display: flex;
+  align-items: flex-start;
+} */
+
+
+td img {
+  width: 1.5em;
+}
+
 .card-header button {
   font-size: 1.5em;
+  width: 100%;
+}
+
+.card-header img {
+  width: 1.5em;
+}
+
+.accordion-course {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accordion-course div {
+  /* min-width: 15%; */
+  text-align: left;
+  margin: 0 5px;
+}
+
+.accordion-course .course-schedule {
+  display: flex;
+  align-items: start;
+  min-width: 25%;
+  justify-content: center;
+}
+
+.accordion-course .course-title {
+  display: flex;
+  align-items: start;
+  width: 20%;
+  justify-content: center;
+}
+
+.accordion-course .course-start {
+  display: flex;
+  align-items: start;
+  width: 15%;
+  justify-content: center;
+}
+
+.accordion-course .course-price {
+  display: flex;
+  align-items: start;
+  min-width: 10%;
+  justify-content: center;
+}
+
+.accordion-course .course-duration {
+  display: flex;
+  align-items: start;
+  min-width: 15%;
+  justify-content: center;
 }
 
 .card-body {
@@ -268,7 +338,7 @@
 
 .btn-outline-dark:hover {
   background: #234d6d;
-  color: #eee;
+  color: #fafafa;
 }
 
 .btn-outline-dark a {
@@ -277,7 +347,7 @@
 }
 
 .btn-outline-dark a:hover {
-  color: #eee;
+  color: #fafafa;
 }
 
 .apply-process {
@@ -287,11 +357,12 @@
 .apply-steps {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between;;
 
 }
 
 .apply-steps div {
+  /* box-shadow: 1px 1px 5px 5px #ddd; */
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -315,7 +386,7 @@
 
 .apply-form {
   width: 60%;
-  margin: 20px auto;
+  margin: 50px auto 20px auto;
   padding: 40px;
   box-shadow: 1px 1px 10px 1px #aaa;
 }
@@ -387,7 +458,7 @@
 .footer {
   height: 75px;
   background-color: #234d6d;
-  color: #eee;
+  color: #fafafa;
   display: flex;
   flex-direction: column;
   justify-content: center;

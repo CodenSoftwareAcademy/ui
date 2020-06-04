@@ -11,9 +11,8 @@ function About() {
                 intruirea angajatilor.</p>
                 <p>Pentru a putea livra toate cunostintele necesare unui Junior Web Developer intr-un timp cat mai scurt,
                 am dezvoltat un program condensat de numai 7 saptamani pentru Frontend Development si 12 saptamani pentru 
-                Full Stack Development. Intrucat este vorba de un volum foarte mare de informatii noi, este recomandata si 
-                alocarea unui timp individual de studiu in afara orelor de curs.</p>
-                <p id="trainer">Cursurile sunt tinute de traineri certificati cu experienta atat in industrie cat si in mediul academic</p>
+                Full Stack Development.</p>
+                <p id="trainer"> Cursurile sunt tinute de traineri certificati cu experienta atat in industrie cat si in mediul academic</p>
                 <p>Cursurile se desfasoara exclusiv la distanta, fiecare sedinta avand loc pe o platforma de video conferinta 
                 impreuna cu instructorul cursului respectiv. Avantajele acestui tip de colaborare este timpul economisit, 
                 nefiind necesara deplasarea la sau de la sala de curs precum si inregistrarile fiecarei sedinte de curs si punerea la dispozitie 

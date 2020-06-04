@@ -1,5 +1,11 @@
 import React from 'react';
 import {Button, Table} from 'react-bootstrap';
+import title from '../title.svg';
+import start from '../start.svg';
+import duration from '../duration.svg';
+import price from '../price.svg';
+import schedule from '../schedule.svg';
+import { Accordion, Card} from 'react-bootstrap';
 
 const TABLE_HEADER = [
     "Course",
@@ -49,64 +55,29 @@ const TABLE_DATA = [
 
 function Courses() {
     return(
-        <Table responsive>
-      <thead>
-          <tr>
-            {TABLE_HEADER.map((item,i) => (
-                <th key={i}>
-                    {item}
-                </th>
-            ))}
-        </tr>
-      </thead>
-      <tbody>
-          {TABLE_DATA.map((item, i) => (
-              <tr key={i}>
-                <td>{item.name}</td>
-                  <td>{item.start}</td>
-                  <td>{item.duration}</td>
-                  <td>{item.price} &euro;</td>
-                  <td>{item.schedule[0]}<br/>{item.schedule[1]}<br/>{item.schedule[2]}</td>
-                  {/* <td><Button variant="outline-dark"><a href="#apply">Aplica</a></Button></td> */}
-              </tr>
-          ))}
-        {/* <tr>
-          <td>Full-Stack Javascript Developer - Romana</td>
-          <td>01/09/2020</td>
-          <td>12 weeks</td>
-          <td>4000 RON</td>
-          <td><Button variant="outline-dark">Aplica</Button></td>
-        </tr>
-        <tr>
-          <td>Frontend Developer - Romana</td>
-          <td>01/09/2020</td>
-          <td>7 weeks</td>
-          <td>2500 RON</td>
-          <td><Button variant="outline-dark">Aplica</Button></td>
-        </tr>
-        <tr>
-          <td>Full-Stack Javascript Developer - Romana</td>
-          <td>05/01/2021</td>
-          <td>12 weeks</td>
-          <td>4000 RON</td>
-          <td><Button variant="outline-dark">Aplica</Button></td>
-        </tr>
-        <tr>
-          <td>Full-Stack Javascript Developer - Engleza</td>
-          <td>To be announced</td>
-          <td>12 weeks</td>
-          <td>4000 RON</td>
-          <td><Button variant="outline-dark">Aplica</Button></td>
-        </tr>
-        <tr>
-          <td>Frontend Developer - Engleza</td>
-          <td>To be announced</td>
-          <td>7 weeks</td>
-          <td>2500 RON</td>
-          <td><Button variant="outline-dark">Aplica</Button></td>
-        </tr> */}
-      </tbody>
-    </Table>
+      <>
+       
+    <Accordion>
+    {TABLE_DATA.map((item, i) => (
+        <Card key={i}>
+        <Card.Header>
+        <Accordion.Toggle as={Button} variant="p" eventKey={i}>
+          <div className="accordion-course">
+          <div className="course-title"><img src={title}/>{item.name}</div>
+          <div className="course-start"><img src={start}/>&nbsp;{item.start}</div>
+          <div className="course-duration"><img src={duration}/>{item.duration}</div>
+          <div className="course-price"><img src={price}/>&nbsp;{item.price} &euro;</div>
+          <div className="course-schedule"><img src={schedule}/>&nbsp;<div>{item.schedule[0]}<br/>{item.schedule[1]}<br/>{item.schedule[2]}</div></div>
+          </div>
+        </Accordion.Toggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey={0}>
+        <Card.Body>&nbsp;&nbsp;{"item.answer"}</Card.Body>
+        </Accordion.Collapse>
+    </Card>
+    ))}
+  </Accordion>
+  </>
     )
 }
 

@@ -13,7 +13,7 @@ class Apply extends React.Component {
                     <div>
                         <img src={b1} alt="b1"/>
                         <h3>
-                        Completezi formularul de mai jos cu datele tale de contact si alegand cursul care ti se potriveste.
+                        Completezi formularul de mai jos cu datele tale de contact si alegi cursul care ti se potriveste.
                     </h3>
                     </div>
                     <div>
@@ -25,7 +25,7 @@ class Apply extends React.Component {
                     <div>
                         <img src={b3} alt="b3"/>
                         <h3>
-                        <span>Felicitari, ai fost admis!</span> Pentru a te pregati pentru inceperea cursului, iti vom pune la dispozitie un material pregatitor.
+                        <span>Felicitari, ai fost admis!</span> Pentru a te pregati de inceperea cursului, iti vom pune la dispozitie un material pregatitor.
                     </h3>
                     </div>
                 </div>

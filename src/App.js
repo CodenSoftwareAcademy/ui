@@ -20,7 +20,7 @@ function App() {
         <Headline />
       </div>
       <div id="about" className="section">
-        <Chapter name="Despre Curs"/>
+        <Chapter name="Despre Noi"/>
         <About />
         {/* <Stack /> */}
       </div>

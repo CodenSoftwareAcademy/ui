@@ -3,7 +3,7 @@ import logo from '../csa.png';
 import {Button} from 'react-bootstrap';
 
 const menu = [
-  {link:'about', title:'Despre Curs'},
+  {link:'about', title:'Despre Noi'},
   {link:'roadmap', title:'Structura Cursului'},
   {link:'courses', title:'Calendar'},
   {link:'contact', title:'Contact'}
