@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be4fecce52a704b0db612d9acf51ee8f",
+    "revision": "93567cb0004c6e18adfed71f2392674d",
     "url": "/ui/index.html"
   },
   {
-    "revision": "8847a14a26c068757686",
+    "revision": "8fa9d340aa404a91c977",
     "url": "/ui/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "92ac83249d077a1d53e2",
-    "url": "/ui/static/css/main.ddd5b899.chunk.css"
+    "revision": "76c064b120397e5a04c8",
+    "url": "/ui/static/css/main.2c3b16b0.chunk.css"
   },
   {
-    "revision": "8847a14a26c068757686",
-    "url": "/ui/static/js/2.297157c2.chunk.js"
+    "revision": "8fa9d340aa404a91c977",
+    "url": "/ui/static/js/2.a8513d03.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/ui/static/js/2.297157c2.chunk.js.LICENSE.txt"
+    "url": "/ui/static/js/2.a8513d03.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "92ac83249d077a1d53e2",
-    "url": "/ui/static/js/main.10852bd8.chunk.js"
+    "revision": "76c064b120397e5a04c8",
+    "url": "/ui/static/js/main.b850e481.chunk.js"
   },
   {
     "revision": "0816e56d455e57dc4478",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c26a73b45b9a801864f13edeb0aa2cfb",
     "url": "/ui/static/media/css.c26a73b4.png"
+  },
+  {
+    "revision": "bcd6f2906ab590682bd785d2823dccd5",
+    "url": "/ui/static/media/duration.bcd6f290.svg"
   },
   {
     "revision": "98ff4822d03ab0f5746653f56441d38e",
@@ -108,8 +112,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ui/static/media/node.521444a2.png"
   },
   {
+    "revision": "7fe41d606a233e9bf392a1eccf4a3a09",
+    "url": "/ui/static/media/price.7fe41d60.svg"
+  },
+  {
     "revision": "4009eef3b3e291f296e71962c70895c5",
     "url": "/ui/static/media/react.4009eef3.svg"
+  },
+  {
+    "revision": "92ccddf2ecba3ff5754ba8f2ebd8b1aa",
+    "url": "/ui/static/media/schedule.92ccddf2.svg"
+  },
+  {
+    "revision": "7887bc842a8e84ffc74bfce7c3732bc7",
+    "url": "/ui/static/media/start.7887bc84.svg"
+  },
+  {
+    "revision": "05e7fc1b6c6cbb4915ea9704c02b0a8d",
+    "url": "/ui/static/media/title.05e7fc1b.svg"
   },
   {
     "revision": "5140ce702a62703fa7bb4c3573c3aeb8",
