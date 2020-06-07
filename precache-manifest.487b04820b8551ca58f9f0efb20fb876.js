@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "93567cb0004c6e18adfed71f2392674d",
+    "revision": "bd4aaccead7e28b94779a7ec4bb75c4a",
     "url": "/ui/index.html"
   },
   {
-    "revision": "8fa9d340aa404a91c977",
+    "revision": "88786087b2d7331bf9c3",
     "url": "/ui/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "76c064b120397e5a04c8",
-    "url": "/ui/static/css/main.2c3b16b0.chunk.css"
+    "revision": "92064023d63f6ad57ca0",
+    "url": "/ui/static/css/main.ec886d0f.chunk.css"
   },
   {
-    "revision": "8fa9d340aa404a91c977",
-    "url": "/ui/static/js/2.a8513d03.chunk.js"
+    "revision": "88786087b2d7331bf9c3",
+    "url": "/ui/static/js/2.3b68282b.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/ui/static/js/2.a8513d03.chunk.js.LICENSE.txt"
+    "url": "/ui/static/js/2.3b68282b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "76c064b120397e5a04c8",
-    "url": "/ui/static/js/main.b850e481.chunk.js"
+    "revision": "92064023d63f6ad57ca0",
+    "url": "/ui/static/js/main.b820be43.chunk.js"
   },
   {
     "revision": "0816e56d455e57dc4478",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ui/static/media/bullet31.9d0d03cd.png"
   },
   {
+    "revision": "86c333164e1bcb7dfefc4e684b3020f0",
+    "url": "/ui/static/media/clock.86c33316.svg"
+  },
+  {
     "revision": "ec54b4ff1198a377a4b8bb1f5bed0885",
     "url": "/ui/static/media/cover4.ec54b4ff.png"
   },
@@ -64,12 +68,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ui/static/media/css.c26a73b4.png"
   },
   {
+    "revision": "9aef94cebb4153e69712951381ceeced",
+    "url": "/ui/static/media/downarrow.9aef94ce.svg"
+  },
+  {
+    "revision": "1c60199e90504a3eab9f77786cacf60a",
+    "url": "/ui/static/media/duration-white.1c60199e.png"
+  },
+  {
     "revision": "bcd6f2906ab590682bd785d2823dccd5",
     "url": "/ui/static/media/duration.bcd6f290.svg"
   },
   {
+    "revision": "d90873ef357bdc0508dca3e00423f388",
+    "url": "/ui/static/media/edit1.d90873ef.jpeg"
+  },
+  {
     "revision": "98ff4822d03ab0f5746653f56441d38e",
     "url": "/ui/static/media/express.98ff4822.png"
+  },
+  {
+    "revision": "5f55025b5dda64c76d679cb53440b8ff",
+    "url": "/ui/static/media/facebook-white.5f55025b.svg"
   },
   {
     "revision": "4dd64e74c8ab181680d3c89d61cfd074",
@@ -92,12 +112,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ui/static/media/html.f2282f94.png"
   },
   {
+    "revision": "764a7c1de96510123f2c097f879ea590",
+    "url": "/ui/static/media/instagram-white.764a7c1d.svg"
+  },
+  {
     "revision": "db7933e6a7f7acaf99a33f39b286974b",
     "url": "/ui/static/media/js.db7933e6.png"
   },
   {
     "revision": "16ec7689685b9a3190d9640e10975c4d",
     "url": "/ui/static/media/jwt.16ec7689.svg"
+  },
+  {
+    "revision": "a31df26ba89fb7e6f304167169f1a192",
+    "url": "/ui/static/media/linkedin-white.a31df26b.svg"
+  },
+  {
+    "revision": "e6956db22f6b55500046d41bb128484a",
+    "url": "/ui/static/media/mail.e6956db2.svg"
   },
   {
     "revision": "09ed2051ed0b6e784bede6e70c64e9e7",
@@ -112,6 +144,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ui/static/media/node.521444a2.png"
   },
   {
+    "revision": "6b3e88562e928ac7f9805db09f37f1c6",
+    "url": "/ui/static/media/online2.6b3e8856.svg"
+  },
+  {
+    "revision": "9f4f26a769aae229805e78d84ad2eb26",
+    "url": "/ui/static/media/price-red.9f4f26a7.png"
+  },
+  {
     "revision": "7fe41d606a233e9bf392a1eccf4a3a09",
     "url": "/ui/static/media/price.7fe41d60.svg"
   },
@@ -122,6 +162,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "92ccddf2ecba3ff5754ba8f2ebd8b1aa",
     "url": "/ui/static/media/schedule.92ccddf2.svg"
+  },
+  {
+    "revision": "d637abc170ddc49f2f0abc938236e138",
+    "url": "/ui/static/media/star-white.d637abc1.svg"
   },
   {
     "revision": "7887bc842a8e84ffc74bfce7c3732bc7",
