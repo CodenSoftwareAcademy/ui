@@ -1,0 +1,192 @@
+.nav {
+    width: 100%;
+    background-color: #fafafa;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 0 5px #ccc;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  .nav.smaller {
+    height: 75px;
+    transition: all 0.3s;
+  }
+  .nav.smaller .menu a {
+      font-size: 1.2em;
+  }
+  .nav.smaller .menu {
+      margin: 10px;
+  }
+  .nav.smaller .logo {
+    margin: 10px;
+    width: 150px;
+    transition: all 0.3s;
+  }
+  
+  .menu {
+    margin: 15px 30px;
+    display: flex;
+    align-items: center;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #234d6d;
+    font-size: 1.5em;
+    margin: 10px;-webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  .menu a:hover {
+    font-weight: bold;
+  }
+  
+  .menu a#apply-btn {
+    background: #fafafa;
+    padding: 5px;
+    color: #234d6d;
+    border: 3px solid #234d6d;
+    border-radius: 7px;
+    font-weight: bold;
+  }
+  
+  .menu a#apply-btn:hover {
+    background: #234d6d;
+    color: #fafafa;
+  }
+  
+  .logo {
+    width: 15%;
+    margin: 15px 30px;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+
+  
+
+.btn-outline-dark:hover {
+    background: #234d6d;
+    color: #fafafa;
+  }
+  
+  .btn-outline-dark a {
+    color: #234d6d;
+    text-decoration: none;
+  }
+  
+  .btn-outline-dark a:hover {
+    color: #fafafa;
+  }
+  
+
+  @media only screen and (max-width: 1024px) {
+    .nav {
+        align-items: baseline;
+    }
+    .logo {
+        width: 20%;
+        margin: 15px;
+    }
+    .menu {
+        margin: 10px;
+    }
+    .menu a {
+        font-size: 1em;
+    }
+    .nav.smaller {
+        height: 75px;
+        transition: all 0.3s;
+      }
+      .nav.smaller .menu a {
+          font-size: 0.9em;
+      }
+      .nav.smaller .menu {
+          margin: 10px;
+      }
+      .nav.smaller .logo {
+        margin: 10px;
+        width: 150px;
+        transition: all 0.3s;
+      }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 30%;
+        margin: 15px 5px;
+        /* margin-left: 18%; */
+    }
+
+  .nav.smaller {
+    height: 50px;
+  }
+  .nav.smaller .menu a {
+      font-size: 1em;
+  }
+  .nav.smaller .menu {
+      /* margin: 10px; */
+  }
+  .nav.smaller .logo {
+    /* margin: 10px; */
+    width: 100px;
+  }
+
+    .menu {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 30%;
+        margin: 15px 5px;
+        /* margin-left: 18%; */
+    }
+
+  .nav.smaller {
+    height: 50px;
+  }
+  .nav.smaller .menu a {
+      font-size: 1em;
+  }
+  .nav.smaller .menu {
+      /* margin: 10px; */
+  }
+  .nav.smaller .logo {
+    /* margin: 10px; */
+    width: 100px;
+  }
+
+    .menu {
+        display: none;
+    }
+}

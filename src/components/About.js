@@ -1,25 +1,18 @@
 import React from 'react';
-import gen1 from '../gen11.png';
-import gen2 from '../gen21.png';
+import './About.css';
+import gen1 from '../media/gen11.png';
+import gen2 from '../media/gen21.png';
+import AboutUs from './AboutUs';
+import AboutAdvantages from './AboutAdvantages';
+import AboutOffering from './AboutOffering';
 
 function About() {
     return(
         <div className="about">
-            <div className="about-us">
-                <p>Cursurile din cadrul Coden Software Academy sunt destinate persoanelor care isi doresc sa urmeze o cariera 
-                in Web Development, celor care doresc sa isi perfectioneze cunostintele tehnice cat si companiile care doresc 
-                intruirea angajatilor.</p>
-                <p>Pentru a putea livra toate cunostintele necesare unui Junior Web Developer intr-un timp cat mai scurt,
-                am dezvoltat un program condensat de numai 7 saptamani pentru Frontend Development si 12 saptamani pentru 
-                Full Stack Development.</p>
-                <p id="trainer"> Cursurile sunt tinute de traineri certificati cu experienta atat in industrie cat si in mediul academic</p>
-                <p>Cursurile se desfasoara exclusiv la distanta, fiecare sedinta avand loc pe o platforma de video conferinta 
-                impreuna cu instructorul cursului respectiv. Avantajele acestui tip de colaborare este timpul economisit, 
-                nefiind necesara deplasarea la sau de la sala de curs precum si inregistrarile fiecarei sedinte de curs si punerea la dispozitie 
-                catre studenti a materialelor inregistrate pentru consultarea lor ulterioara.</p>
-                <p>Puteti opta pentru cursul de <b>Full Stack Developer</b> care cuprinde doua module: Frontend si Backend sau pentru cursul <b>Frontend Developer</b> care cuprinde doar modulul de Frontend</p>
-                <p>Tot ce aveti nevoie este un laptop sau calculator, o conexiune buna la internet si dorinta de a invata!</p>
-            </div>
+            <AboutUs />
+
+            <h3 id="advantage">Avantaje</h3>
+            <AboutAdvantages />
 
             <h3>Cum arata o sedinta obisnuita de curs</h3>
             <div className="about-lesson">
@@ -58,56 +51,7 @@ function About() {
                     </p>
             </div>
             </div>
-            <div className="offering">
-                <h3>Ce iti oferim in cadrul cursului</h3>
-                <div className="offering-content">
-                    <div className="oc-1">
-                        <ul>
-                            <li>
-                            Cum sa construiesti o aplicatie web adaptabila atat pentru desktop cat si pentru mobil
-                            </li>
-                            <li>
-                            Iti vei dezvolta gandirea algoritmica pentru a putea dezvolta orice algoritm
-                            </li>
-                            <li>
-                            Punem accentul pe dezvoltarea capacitatii studentului de a se descurca singur in rezolvarea problemelor
-                            </li>
-                            <li>
-                            Cum sa obtii date de la un API si sa le afisezi in propria aplicatie web
-                            </li>
-                            <li>
-                                Cum sa utilizezi un state manager
-                            </li>
-                        </ul>
-                    
-                    
-                    
-                    
-                    </div>
-                    <div className="oc-2">
-                        <ul>
-                            <li>
-                                Cum sa proiectezi si sa creezi o baza de date
-                            </li>
-                            <li>
-                                Cum sa dezvolti propriul API
-                            </li>
-                            <li>
-                                Cum sa dezvolti propria aplicatie capabila sa comunice cu baza de date
-                            </li>
-                            <li>
-                                Cum sa utilizezi tool-uri de versionare si metodologia de lucru Agile
-                            </li>
-                            <li>
-                                Te ajutam sa iti creezi CV-ul si te pregatim pentru interviuri prin simulari
-                            </li>
-                        </ul>
-                    
-                    
-                    
-                    </div>
-                </div>
-            </div>
+            <AboutOffering />
         </div>
     )
 }

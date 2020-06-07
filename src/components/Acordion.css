@@ -1,0 +1,38 @@
+.card-header button {
+    font-size: 1.2em;
+    width: 100%;
+  }
+  
+  .card-header button:focus {
+    box-shadow: none;
+  }
+  
+  .card-header img {
+    width: 1.5em;
+  }
+  
+  .card-header small img {
+    width: 0.5em;
+  }
+  
+  .collapse {
+    width: 80%;
+  }
+  .card-body {
+    font-size: 1.2em;
+  }
+  
+
+
+  @media only screen and (max-width: 1024px) {
+    .card-header {
+        padding: .75em 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 480px) {
+
+}

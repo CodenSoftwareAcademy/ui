@@ -1,6 +1,10 @@
 import React from 'react';
-import logo from '../csa.png';
+import './Header.css';
+import logo from '../media/csa.png';
 import {Button} from 'react-bootstrap';
+
+const HOME = 'Acasa';
+const APPLY_BUTTON = 'Aplica!';
 
 const menu = [
   {link:'about', title:'Despre Noi'},
@@ -38,11 +42,11 @@ class Header extends React.Component {
             <a href="/"><img src={logo} alt="logo"/></a>
           </div>
           <div className="menu">
-            <a href="/">Acasa</a>
+            <a href="/">{HOME}</a>
             {menu.map((item, i) => (
               <a href={'#'+item.link} key={i}>{item.title}</a>
             ))}
-            <a href='#apply' id="apply-btn">Aplica!</a>
+            <a href='#apply' id="apply-btn">{APPLY_BUTTON}</a>
           </div>
         </div>
       )

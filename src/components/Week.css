@@ -1,0 +1,9 @@
+.week {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .week img {
+    width: 90%;
+  }

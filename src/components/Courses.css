@@ -1,0 +1,134 @@
+.accordion {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accordion-course {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .accordion-course div {
+    /* min-width: 15%; */
+    text-align: left;
+    margin: 0 5px;
+  }
+  
+  .accordion-course .course-schedule {
+    display: flex;
+    align-items: flex-start;
+    min-width: 25%;
+    justify-content: center;
+  }
+  
+  .accordion-course .course-title {
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+    justify-content: flex-start;
+  }
+  
+  .accordion-course .course-start {
+    display: flex;
+    align-items: flex-start;
+    width: 15%;
+    justify-content: flex-start;
+  }
+  
+  .accordion-course .course-price {
+    display: flex;
+    align-items: flex-start;
+    min-width: 10%;
+    justify-content: flex-start;
+  }
+  
+  .accordion-course .course-duration {
+    display: flex;
+    align-items: flex-start;
+    min-width: 15%;
+    justify-content: flex-start;
+  }
+  
+
+  @media only screen and (max-width: 1024px) {
+    .accordion {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .accordion-course {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .accordion {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .accordion-course {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+.accordion-course .course-schedule {
+  width: 80%;
+  margin: 10px auto;
+  justify-content: flex-start;
+}
+
+.accordion-course .course-title {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.accordion-course .course-start {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.accordion-course .course-price {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.accordion-course .course-duration {
+    width: 80%;
+    margin: 10px auto;
+}
+}
+@media only screen and (max-width: 480px) {
+    .accordion {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .accordion-course {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+.accordion-course .course-schedule {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.accordion-course .course-title {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.accordion-course .course-start {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.accordion-course .course-price {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.accordion-course .course-duration {
+    width: 90%;
+    margin: 10px auto;
+}
+
+}

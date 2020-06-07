@@ -1,0 +1,118 @@
+
+.contact {
+    width: 80%;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+  }
+  
+  .contact-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+  }
+  
+  .contact-details #mail, #phoneIcon {
+    width: 1em;
+  }
+  
+  .contact-details img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact-form {
+    width: 40%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact-form h5 {
+    text-align: center;
+  }
+  .contact-form form .btn {
+    width: 100%;
+    background: #234d6d;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    margin-top: 20px;
+  }
+  .contact-form input {
+    padding: 2em .75em;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .contact-content {
+        width: 90%;
+    }
+
+    .contact-details {
+        width: 45%;
+        justify-content: space-evenly;
+    }
+    .contact-form {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .contact-details {
+        width: 80%;
+        /* font-size: 0.9em; */
+      }
+      .contact-details div {
+          margin: 0 auto;
+      }
+      .contact-details img {
+          width: 80%;
+          margin: 0 auto;
+      }
+      .contact-form {
+        width: 80%;
+    }
+    .contact-form h5 {
+      margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .contact-details {
+        width: 80%;
+        /* font-size: 0.9em; */
+      }
+      .contact-details div {
+          margin: 0 auto;
+      }
+      .contact-form {
+        width: 80%;
+    }
+    .contact-form h5 {
+      margin-top: 50px;
+  }
+}

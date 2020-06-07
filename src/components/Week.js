@@ -1,5 +1,6 @@
 import React from 'react';
-import week from '../week-ro.png';
+import './Week.css';
+import week from '../media/week-ro.png';
 
 function Week() {
     return(

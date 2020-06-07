@@ -1,4 +1,6 @@
 import React from 'react';
+import './Faq.css';
+import './Acordion.css';
 import {Button, Accordion, Card} from 'react-bootstrap';
 
 const faqArray = [
@@ -30,22 +32,22 @@ const faqArray = [
 
 function Faq(){
     return(
-<div className="faq">
-      <Accordion>
-        {faqArray.map((item, i) => (
-            <Card key={i}>
-            <Card.Header>
-            <Accordion.Toggle as={Button} variant="p" eventKey={i}>
-                {`${i+1}. ${item.question}`}
-            </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey={i}>
-            <Card.Body>&nbsp;&nbsp;{item.answer}</Card.Body>
-            </Accordion.Collapse>
-        </Card>
-        ))}
-      </Accordion>
-      </div>
+        <div className="faq">
+            <Accordion>
+                {faqArray.map((item, i) => (
+                    <Card key={i}>
+                        <Card.Header>
+                            <Accordion.Toggle as={Button} variant="p" eventKey={i}>
+                                {`${i+1}. ${item.question}`}
+                            </Accordion.Toggle>
+                        </Card.Header>
+                        <Accordion.Collapse eventKey={i}>
+                            <Card.Body>&nbsp;&nbsp;{item.answer}</Card.Body>
+                        </Accordion.Collapse>
+                    </Card>
+                ))}
+            </Accordion>
+        </div>
     )
 }
 

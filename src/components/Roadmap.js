@@ -1,20 +1,24 @@
 import React from 'react';
-import frontend from '../frontend.png';
-import backend from '../backend.png';
-import bullet from '../bullet.png';
+import './Roadmap.css';
+import frontend from '../media/frontend.png';
+import backend from '../media/backend.png';
+import bullet from '../media/bullet.png';
+
+const FRONTEND_TITLE = 'Modulul de Frontend';
+const BACKEND_TITLE = 'Modulul de Backend';
 
 function Roadmap() {
     return(
         <div className="roadmap">
             <div className="roadmap-title">
                 <img id="bullet" src={bullet} alt='bullet'/>
-                <h3>Modulul de Frontend</h3>
+                <h3>{FRONTEND_TITLE}</h3>
             </div>
             <img src={frontend} alt='frontend'/>
             <hr/>
             <div className="roadmap-title">
                 <img id="bullet" src={bullet} alt='bullet'/>
-                <h3>Modulul de Backend</h3>
+                <h3>{BACKEND_TITLE}</h3>
             </div>
             <img src={backend} alt='backend'/>
         </div>
