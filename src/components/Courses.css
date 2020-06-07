@@ -6,6 +6,7 @@
 .accordion-course {
     display: flex;
     justify-content: space-evenly;
+    font-size: 0.9em;
   }
   
   .accordion-course div {
