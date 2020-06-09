@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../media/csa.png';
-import {Button} from 'react-bootstrap';
+import {Button, Nav, Navbar} from 'react-bootstrap';
 
 const HOME = 'Acasa';
 const APPLY_BUTTON = 'Aplica!';
@@ -38,16 +38,30 @@ class Header extends React.Component {
     render() {
       return(
         <div id="nav-header" className="nav">
-          <div className="logo">
+          {/* <div className="logo">
             <a href="/"><img src={logo} alt="logo"/></a>
-          </div>
-          <div className="menu">
-            <a href="/">{HOME}</a>
+          </div> */}
+          <Navbar bg="light" expand="lg">
+          <Navbar.Brand href="/">
+            <img id="logo-img" src={logo} alt="logo"/>
+          </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+
+                <Nav.Link href="/">{HOME}</Nav.Link>
+                {menu.map((item, i) => (
+                <Nav.Link href={'#'+item.link} key={i}>{item.title}</Nav.Link>
+                ))}
+                <Nav.Link href="#apply" id="apply-btn">{APPLY_BUTTON}</Nav.Link>
+              </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+            {/* <a href="/">{HOME}</a>
             {menu.map((item, i) => (
               <a href={'#'+item.link} key={i}>{item.title}</a>
             ))}
-            <a href='#apply' id="apply-btn">{APPLY_BUTTON}</a>
-          </div>
+            <a href='#apply' id="apply-btn">{APPLY_BUTTON}</a> */}
         </div>
       )
     }

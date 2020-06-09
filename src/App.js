@@ -10,6 +10,7 @@ import Stack from './components/Stack';
 import About from './components/About';
 import Apply from './components/Apply';
 import Week from './components/Week';
+import Feedback from './components/Feedback';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -43,6 +44,7 @@ function App() {
       </div>
       <div id="review" className="section">
         <Chapter name="Ce Spun Studentii" />
+        <Feedback />
       </div>
       <div id="faq" className="section">
         <Chapter name="Intrebari Frecvente"/>

@@ -18,22 +18,28 @@
     height: 75px;
     transition: all 0.3s;
   }
-  .nav.smaller .menu a {
+  
+  .nav.smaller .navbar {
+    padding: .5em;
+    padding-top: 0;
+    transition: all 0.3s;
+  }
+  .nav.smaller .navbar-nav a {
       font-size: 1.2em;
   }
   .nav.smaller .menu {
       margin: 10px;
   }
-  .nav.smaller .logo {
+  .nav.smaller #logo-img {
     margin: 10px;
-    width: 150px;
+    height: 50px;
     transition: all 0.3s;
   }
   
-  .menu {
-    margin: 15px 30px;
-    display: flex;
-    align-items: center;
+  .navbar-nav {
+    /* margin: 15px 30px; */
+    /* display: flex;
+    align-items: center; */
     -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
@@ -41,35 +47,37 @@
       transition: all 0.3s;
   }
   
-  .menu a {
+  .navbar-nav a {
     text-decoration: none;
     color: #234d6d;
     font-size: 1.3em;
-    margin: 10px;-webkit-transition: all 0.3s;
+    /* margin: 10px; */
+    -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
   }
-  .menu a:hover {
+  .navbar-nav a:hover {
     font-weight: bold;
   }
   
-  .menu a#apply-btn {
+  .navbar-nav a#apply-btn {
     background: #fafafa;
     padding: 5px;
     color: #234d6d;
     border: 3px solid #234d6d;
     border-radius: 7px;
     font-weight: bold;
+    text-align: center;
   }
   
-  .menu a#apply-btn:hover {
+  .navbar-nav a#apply-btn:hover {
     background: #234d6d;
     color: #fafafa;
   }
   
-  .logo {
+  .logo-img {
     width: 15%;
     margin: 15px 30px;
     -webkit-transition: all 0.3s;
@@ -105,6 +113,27 @@
     color: #fafafa;
   }
   
+.bg-light {
+    background: transparent !important;
+}
+
+#logo-img {
+    height: 80px;
+}
+
+.navbar {
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+}
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #234d6d;
+}
 
   @media only screen and (max-width: 1024px) {
     .nav {

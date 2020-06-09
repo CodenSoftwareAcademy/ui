@@ -24,63 +24,101 @@ const TABLE_DATA = [
     {
         name: "Full-Stack Javascript Developer - Romana",
         start: "01/09/2020",
-        duration: "12 weeks",
+        duration: "12 saptamani",
         schedule: ["Marti (18:30-21:30)", "Joi (18:30-21:30)", "Sambata (9:30-12:30)"],
         price: "850",
         details: [
-          "- format din 2 module: Frontend (7 saptamani) si Backend (5 saptamani) ",
-          "- predarea se tine in limba romana",
-          "- suportul teoretic este scris in limba engleza",
-          "- cursul contine 2 evaluari, cate o evaluarea dupa parcurgerea fiecarui modul",
-          "- fiecare evaluare se poate sustine de 2 ori daca nu se reuseste promovarea acesteia din prima.",
-          "- inainte de inceperea cursului este necesara plata unui avans de 15% pentru rezervarea unui loc in cadrul cursului",
-          "- plata se poate face integral la inceputul cursului sau in doua rate egale, fiecare achitata pana la finalizarea unui modul",
-          "- pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com",
-          "- in primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma platita."
+          "Format din 2 module: Frontend (7 saptamani) si Backend (5 saptamani).",
+          "La finalul fiecarui modul se va lucra la cate un proiect (unul de Frontend si unul de Full Stack).",
+          "Se vor aloca 30 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
+          "Predare in limba romana.",
+          "Suport teoretic in limba engleza.",
+          "Cursul contine 2 evaluari, cate o evaluarea la finalul fiecarui modul.",
+          "Fiecare evaluare se poate sustine de 2 ori daca nu se reuseste promovarea acestora din prima.",
+          "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
+          "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
+          "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
+          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
     {
         name: "Frontend Developer - Romana",
         start: "01/09/2020",
-        duration: " 7 weeks",
+        duration: " 7 saptamani",
         schedule: ["Marti (18:30-21:30)", "Joi (18:30-21:30)", "Sambata (9:30-12:30)"],
         price: "500",
         details: [
-          "- contine 2 module: Frontend (7 saptamani) si Backend (5 saptamani) ",
-          "- cursul contine 2 evaluari, cate o evaluarea dupa parcurgerea fiecarui modul"
+          "Format dintr-un singur modul: Frontend (7 saptamani).",
+          "La finalul modulului se va lucra la un proiect de Frontend.",
+          "Se vor aloca 18 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
+          "Predare in limba romana.",
+          "Suport teoretic in limba engleza.",
+          "Cursul contine o evaluare la finalul modulului.",
+          "Evaluarea se poate sustine de 2 ori daca nu se reuseste promovarea acesteia din prima.",
+          "Plata integrala a cursului inainte de inceperea cursului: 500 Euro.",
+          "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 2 rate de 225 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
+          "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
+          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
     {
         name: "Full-Stack Javascript Developer - Romana",
         start: "05/01/2021",
-        duration: "12 weeks",
+        duration: "12 saptamani",
         schedule: ["Marti (18:30-21:30)", "Joi (18:30-21:30)", "Sambata (9:30-12:30)"],
         price: "850",
         details: [
-          "- contine 2 module: Frontend (7 saptamani) si Backend (5 saptamani) ",
-          "- cursul contine 2 evaluari, cate o evaluarea dupa parcurgerea fiecarui modul"
+          "Format din 2 module: Frontend (7 saptamani) si Backend (5 saptamani).",
+          "La finalul fiecarui modul se va lucra la cate un proiect (unul de Frontend si unul de Full Stack).",
+          "Se vor aloca 36 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
+          "Predare in limba romana.",
+          "Suport teoretic in limba engleza.",
+          "Cursul contine 2 evaluari, cate o evaluarea la finalul fiecarui modul.",
+          "Fiecare evaluare se poate sustine de 2 ori daca nu se reuseste promovarea acestora din prima.",
+          "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
+          "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
+          "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
+          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
     {
         name: "Full-Stack Javascript Developer - Engleza",
-        start: "To be announced",
-        duration: "12 weeks",
+        start: "Urmeaza sa fie anuntat",
+        duration: "12 saptamani",
         schedule: ["Luni (18:30-21:30)", "Miercuri (18:30-21:30)", "Vineri (18:30-21:30)"],
         price: "850",
         details: [
-          "- contine 2 module: Frontend (7 saptamani) si Backend (5 saptamani) ",
-          "- cursul contine 2 evaluari, cate o evaluarea dupa parcurgerea fiecarui modul"
+          "Format din 2 module: Frontend (7 saptamani) si Backend (5 saptamani).",
+          "La finalul fiecarui modul se va lucra la cate un proiect (unul de Frontend si unul de Full Stack).",
+          "Se vor aloca 36 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
+          "Predare in limba engleza.",
+          "Suport teoretic in limba engleza.",
+          "Cursul contine 2 evaluari, cate o evaluarea la finalul fiecarui modul.",
+          "Fiecare evaluare se poate sustine de 2 ori daca nu se reuseste promovarea acestora din prima.",
+          "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
+          "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
+          "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
+          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
     {
         name: "Frontend Developer - Engleza",
-        start: "To be announced",
-        duration: " 7 weeks",
+        start: "Urmeaza sa fie anuntat",
+        duration: " 7 saptamani",
         schedule: ["Luni (18:30-21:30)", "Miercuri (18:30-21:30)", "Vineri (18:30-21:30)"],
         price: "500",
         details: [
-          "- contine 2 module: Frontend (7 saptamani) si Backend (5 saptamani) ",
-          "- cursul contine 2 evaluari, cate o evaluarea dupa parcurgerea fiecarui modul"
+          "Format dintr-un singur modul: Frontend (7 saptamani).",
+          "La finalul modulului se va lucra la un proiect de Frontend.",
+          "Se vor aloca 18 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
+          "Predare in limba engleza.",
+          "Suport teoretic in limba engleza.",
+          "Cursul contine o evaluare la finalul modulului.",
+          "Evaluarea se poate sustine de 2 ori daca nu se reuseste promovarea acesteia din prima.",
+          "Plata integrala a cursului inainte de inceperea cursului: 500 Euro.",
+          "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 2 rate de 225 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
+          "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
+          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
 ];
@@ -105,7 +143,10 @@ function Courses() {
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey={i}>
-            <Card.Body>&nbsp;&nbsp;{item.details.map((item,i) => <p key={i}>{item}</p>)}</Card.Body>
+            <Card.Body>&nbsp;&nbsp;<ul>{item.details.map((item,i) => (
+              (i == 3 || i == 7 || i == 8 || i == 10) ? <li key={i}><b>{item}</b></li> : <li key={i}>{item}</li>
+              ))}</ul>
+            </Card.Body>
           </Accordion.Collapse>
       </Card>
       ))}
