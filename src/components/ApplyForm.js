@@ -4,6 +4,8 @@ import {Form, Button} from 'react-bootstrap';
 const SUCCESS_MSG = "Ai aplicat cu succes! Vei primit un email de confirmare.";
 const FAIL_MSG = "Ceva nu a mers bine. Mai incearca o data!";
 const SUBMIT_BTN = 'Submit';
+const SENDING = "Trimitere mesaj...";
+const URL = "https://csa-server.herokuapp.com/student";
 const TABLE_DATA = [
   {
       name: "Full-Stack Javascript Developer - Romana",
@@ -54,9 +56,27 @@ class ApplyForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      sending: false
     }
   }
+
+  sendForm = () => {
+    this.setState({sending: true})
+    fetch(URL,
+      {
+          method : 'POST',
+          headers : new Headers({
+              'Content-type': 'application/json'
+          }),
+          body: JSON.stringify(this.state)
+      })
+      .then( res => 
+          res.ok 
+          ? this.setState({submitForm: "success", sending: false})
+          : this.setState({submitForm: "fail", sending: false})
+      )
+      .catch(err => this.setState({submitForm: "fail", sending: false}))
+}
 
   onChange = e => {
     this.setState({
@@ -98,12 +118,13 @@ class ApplyForm extends React.Component {
                 ))}
               </Form.Control>
             </Form.Group>
-            <Form.Group onChange={this.onChange} className={this.state.source==SOURCE_DATA[SOURCE_DATA.length-2] || this.state.source==SOURCE_DATA[SOURCE_DATA.length-1] ? 'source-show' : 'source-hide'} controlId="source-msg">
+            <Form.Group onChange={this.onChange} className={this.state.source==SOURCE_DATA[SOURCE_DATA.length-2] || this.state.source==SOURCE_DATA[SOURCE_DATA.length-1] ? 'source-show' : 'source-hide'} controlId="sourcemsg">
                 <Form.Control type="text" placeholder={this.state.source==SOURCE_DATA[SOURCE_DATA.length-2]? SOURCE_FRIEND : SOURCE_OTHER} />
             </Form.Group>
-            <Button type="button">
-              {SUBMIT_BTN}
+            <Button type="button" onClick={this.sendForm}>
+                {SUBMIT_BTN}
             </Button>
+                {this.state.sending ? <p style={{textAlign: 'center'}}>{SENDING}</p> : null}
             <Form.Label className={`submitForm ${this.state.submitForm}`}>
               {this.state.submitForm === "success"
               ? SUCCESS_MSG

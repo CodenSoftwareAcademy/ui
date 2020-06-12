@@ -1,16 +1,36 @@
 import React from 'react';
 import {Form, Button} from 'react-bootstrap';
 
-const SUCCESS_MSG = "Ai aplicat cu succes! Vei primit un email de confirmare.";
+const SUCCESS_MSG = "Mesajul tau a fost trimis cu succes! Vei primi un raspuns intr-un timp cat mai scurt.";
 const FAIL_MSG = "Ceva nu a mers bine. Mai incearca o data!";
 const SUBMIT_BTN = 'Submit';
+const SENDING = "Trimitere mesaj...";
+const URL = "https://csa-server.herokuapp.com/contact";
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      sending: false
     }
+  }
+
+  sendForm = () => {
+      this.setState({sending: true})
+      fetch(URL,
+        {
+            method : 'POST',
+            headers : new Headers({
+                'Content-type': 'application/json'
+            }),
+            body: JSON.stringify(this.state)
+        })
+        .then( res => 
+            res.ok 
+            ? this.setState({submitForm: "success", sending: false})
+            : this.setState({submitForm: "fail", sending: false})
+        )
+        .catch(err => this.setState({submitForm: "fail", sending: false}))
   }
 
   onChange = e => {
@@ -37,9 +57,10 @@ class ContactForm extends React.Component {
                     <Form.Control onChange={this.onChange} as="textarea" rows="6" placeholder="Mesaj" />
                 </Form.Group>
                 
-                <Button type="button">
+                <Button type="button" onClick={this.sendForm}>
                     {SUBMIT_BTN}
                 </Button>
+                    {this.state.sending ? <p style={{textAlign: 'center'}}>{SENDING}</p> : null}
                 <Form.Label className={`submitForm ${this.state.submitForm}`}>
                     {this.state.submitForm === "success"
                     ? SUCCESS_MSG
