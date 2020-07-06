@@ -107,7 +107,7 @@
       
       }
     .lesson-content img {
-        width: 95%;
+        width: 80%;
     }
     .about-lesson-img img {
         width: 80%;
@@ -140,6 +140,9 @@
     }
     .about-lesson-img {
         margin: 0;
+    }
+    .lesson-content img {
+      width: 75%;
     }
     .about-lesson-img img {
         width: 75%;
