@@ -15,12 +15,27 @@ const menu = [
 
 class Header extends React.Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      navExpanded: false
+    }
+  }
+
     componentDidMount() {
       window.addEventListener("scroll", this.resizeHeaderOnScroll);
     }
   
     componentWillUnmount(){
       window.removeEventListener('scroll', this.resizeHeaderOnScroll);
+    }
+
+    setNavExpanded = () => {
+      this.setState({ navExpanded: !this.state.navExpanded });
+    }
+  
+    closeNav = () => {
+      this.setState({ navExpanded: false });
     }
 
     resizeHeaderOnScroll() {
@@ -41,19 +56,20 @@ class Header extends React.Component {
           {/* <div className="logo">
             <a href="/"><img src={logo} alt="logo"/></a>
           </div> */}
-          <Navbar bg="light" expand="lg">
+          <Navbar bg="light" expand="lg" 
+                expanded={this.state.navExpanded}>
           <Navbar.Brand href="/">
             <img id="logo-img" src={logo} alt="logo"/>
           </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => this.setState({navExpanded: this.state.navExpanded ? false : "expanded"})}/>
+            <Navbar.Collapse id="basic-navbar-nav" onSelect={this.closeNav}>
               <Nav className="mr-auto">
 
-                <Nav.Link href="/">{HOME}</Nav.Link>
+                <Nav.Link onClick={this.closeNav} href="/">{HOME}</Nav.Link>
                 {menu.map((item, i) => (
-                <Nav.Link href={'#'+item.link} key={i}>{item.title}</Nav.Link>
+                <Nav.Link onClick={this.closeNav} href={'#'+item.link} key={i}>{item.title}</Nav.Link>
                 ))}
-                <Nav.Link href="#apply" id="apply-btn">{APPLY_BUTTON}</Nav.Link>
+                <Nav.Link onClick={this.closeNav} href="#apply" id="apply-btn">{APPLY_BUTTON}</Nav.Link>
               </Nav>
           </Navbar.Collapse>
         </Navbar>

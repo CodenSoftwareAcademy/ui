@@ -38,7 +38,7 @@ const TABLE_DATA = [
           "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
           "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
-          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
+          "Dupa prima saptamana de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
     {
@@ -58,7 +58,7 @@ const TABLE_DATA = [
           "Plata integrala a cursului inainte de inceperea cursului: 500 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 2 rate de 225 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
           "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
-          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
+          "Dupa prima saptamana de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
     {
@@ -78,7 +78,7 @@ const TABLE_DATA = [
           "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
           "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
-          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata.",
+          "Dupa prima saptamana de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata.",
         ]
     },
     {
@@ -98,7 +98,7 @@ const TABLE_DATA = [
           "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
           "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
-          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
+          "Dupa prima saptamana de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
     {
@@ -118,7 +118,7 @@ const TABLE_DATA = [
           "Plata integrala a cursului inainte de inceperea cursului: 500 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 2 rate de 225 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
           "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
-          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
+          "Dupa prima saptamana de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
         ]
     },
 ];

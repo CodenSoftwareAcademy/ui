@@ -4,7 +4,7 @@ import bullet from '../media/bullet.png';
 const ADVANTAGES_DATA = [
     "Ai posibilitatea de a incepe o cariera intr-unul dintre cele mai bine platite domenii de pe piata.",
     "Nu este nevoie sa ai cunostinte in IT pentru a incepe cursul. Tot ce ai nevoie este determinarea de a invata si exersa.",
-    "Daca in primele doua saptamani consideri ca acest curs nu este ceea ce iti doresti, te poti retrage si vei primi integral suma platita.",
+    "Daca dupa prima saptamana consideri ca acest curs nu este ceea ce iti doresti, te poti retrage si vei primi integral suma platita.",
     "Vei folosi un stack modern de tehnologii precum React, Redux, Node, Express sau MongoDB.",
     "Vei dezvolta in cadrul cursului proiecte pe care le poti adauga in portofoliul personal si prezenta la interviurile de angajare.",
     "Vei avea parte de traineri cu experienta atat in predarea conceptelor tehnice cat si in aplicarea lor in industrie.",

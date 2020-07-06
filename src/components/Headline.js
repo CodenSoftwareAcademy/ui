@@ -8,7 +8,7 @@ import title from '../media/star-white.svg';
 
 const HEADLINE_NAME = 'Curs Full Stack Javascript Developer';
 const HEADLINE_TYPE = 'Part-time [ONLINE]';
-const HEADLINE_DETAILS = '12 saptamani de curs, 3 zile pe saptamana, fara a fi nevoie sa te deplasezi';
+const HEADLINE_DETAILS = '12 saptamani de curs, 3 zile pe saptamana';
 const SUBTITLE = [
   'Devino Junior Full Stack Developer in doar 12 saptamani fara a fi nevoie de experienta anterioara.',
   'Vei invata sa dezvolti atat aplicatii web cat si API-uri direct de la tine de acasa'
