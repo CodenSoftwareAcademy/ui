@@ -9,23 +9,28 @@
     box-shadow: 1px 1px 10px 1px #aaa;
     margin: 0 auto;
     text-align: center;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
 }
 
 .carousel-inner h3{
-    height: 40%;
-    margin-bottom: 1em;
-    margin-top: 1.5em;
+    height: 50%;
+    /* margin-bottom: 1em;
+    margin-top: 1em; */
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 .carousel-caption {
-    position: relative;
+    position: absolute;
     color: #234d6d;
-    left: auto;
+    /* left: auto;
     right: auto;
-    top: auto;
+    top: 0; */
     bottom: auto;
     height: 10%;
-    /* padding-top: 0; */
+    padding-top: 0;
     text-align: right;
     padding-right: 1em;
 }
@@ -42,4 +47,23 @@
     background-color: #234d6d;
     border-radius: 50%;
     padding: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+    .carousel-inner h3{
+        font-size: 1.1em;
+    }  
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-inner h3{
+        font-size: 0.8em;
+    } 
+}
+
+@media only screen and (max-width: 480px) {
+    .carousel-inner h3{
+        font-size: 0.7em;
+    } 
+  
 }

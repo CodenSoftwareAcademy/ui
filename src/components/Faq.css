@@ -5,3 +5,7 @@
   .faq button {
     text-align: left;
   }
+
+  .collapse {
+    width: 100%;
+  }

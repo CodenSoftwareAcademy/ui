@@ -1,8 +1,8 @@
 import React from 'react';
 
 const ABOUT_US_DATA = [
-    {type: "normal", text: "Cursurile din cadrul Coden Software Academy sunt destinate persoanelor care isi doresc sa urmeze o cariera in Web Development, celor care doresc sa isi perfectioneze cunostintele tehnice cat si companiile care doresc intruirea angajatilor."},
-    {type: "normal", text: "Pentru a putea livra toate cunostintele necesare unui Junior Web Developer intr-un timp cat mai scurt, am dezvoltat un program condensat de numai 7 saptamani pentru Frontend Development si 12 saptamani pentru Full Stack Development."},
+    {type: "normal", text: "Cursurile din cadrul Coden Software Academy sunt destinate persoanelor care isi doresc sa urmeze o cariera in Web Development, celor care doresc sa isi perfectioneze cunostintele tehnice cat si companiilor care doresc instruirea angajatilor."},
+    {type: "normal", text: "Pentru a putea livra toate cunostintele necesare unui Junior Web Developer intr-un timp cat mai scurt, am dezvoltat un program condensat de numai 7 saptamani pentru Frontend Developer si 12 saptamani pentru Full Stack Developer."},
     {type: "trainer", text: "Cursurile sunt tinute de traineri certificati cu experienta atat in industrie cat si in mediul academic"},
     {type: "normal", text: "Cursurile se desfasoara exclusiv la distanta, fiecare sedinta avand loc pe o platforma de video conferinta impreuna cu instructorul cursului respectiv. Avantajele acestui tip de colaborare este timpul economisit, nefiind necesara deplasarea la sau de la sala de curs precum si inregistrarile fiecarei sedinte de curs si punerea la dispozitie catre studenti a materialelor inregistrate pentru consultarea lor ulterioara."},
     {type: "bold", text: "Puteti opta pentru cursul de Full Stack Developer care cuprinde doua module: Frontend si Backend sau pentru cursul Frontend Developer care cuprinde doar modulul de Frontend"},

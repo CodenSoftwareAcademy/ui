@@ -9,25 +9,13 @@ const faqArray = [
         answer: "Cursul nu garanteaza un job ci asigura cunostintele tehnice necesare unui job de programator junior. Ne concentram pe dezvoltarea modului de gandire analitica si pe obisnuirea studentilor de a cauta singuri informatia de care au nevoie. Pe langa cunostintele tehnice, ajutam studentii sa se pregateasca pentru interviuri prin asistenta la pregatirea CV-ului si prin simularea unor interviuri tehnice."
     },
     {
-        question: "Ce imi ofera acest curs?",
-        answer: "Acest curs ofera posibilitatea de a face o gramada de chestii"
+        question: "Ce obtin in urma cursului?",
+        answer: "Dupa parcurgerea cursului veti obtine un certificat de absolvire care va contine toate notiunile invatate. Aceste notiuni ce sunt necesare pentru un post de programator web junior le veti exersa in cadrul fiecarei sedinte in intervalul de exercitii practice precum si in cadrul proiectelor pe care le veti dezvolta in cadrul cursului. Pe langa aceste cunostinte, veti obtine o gandire algoritmica si veti invata cum sa va descurcati singuri in rezolvarea problemelor."
     },
     {
-        question: "Ce imi ofera acest curs?",
-        answer: "Acest curs ofera posibilitatea de a face o gramada de chestii"
-    },
-    {
-        question: "Ce imi ofera acest curs?",
-        answer: "Acest curs ofera posibilitatea de a face o gramada de chestii"
-    },
-    {
-        question: "Ce imi ofera acest curs?",
-        answer: "Acest curs ofera posibilitatea de a face o gramada de chestii"
-    },
-    {
-        question: "Ce imi ofera acest curs?",
-        answer: "Acest curs ofera posibilitatea de a face o gramada de chestii"
-    },
+        question: "In ce consta pregatirea pentru interviu?",
+        answer: "Pregatirea studentului pentru un interviu de programator consta in simularea unui interviu tehnic cu unul dintre instructorii nostri. Simularea va consta in intrebari despre notiuni teoretice si o parte practica pentru a reproduce cat mai fidel un interviu tehnic real."
+    }
 ]
 
 function Faq(){

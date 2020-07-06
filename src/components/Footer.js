@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import facebook from '../media/facebook-white.svg';
-import instagram from '../media/instagram-white.svg';
-import linkedin from '../media/linkedin-white.svg';
+import facebook from '../media/fb-fillwhite.svg';
+import instagram from '../media/insta-fillwhite.svg';
+import linkedin from '../media/linkedin-fillwhite.svg';
 
 function Footer() {
     return(

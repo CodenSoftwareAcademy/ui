@@ -33,7 +33,7 @@ const TABLE_DATA = [
           "Se vor aloca 30 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
           "Predare in limba romana.",
           "Suport teoretic in limba engleza.",
-          "Cursul contine 2 evaluari, cate o evaluarea la finalul fiecarui modul.",
+          "Cursul contine 2 evaluari, cate o evaluare la finalul fiecarui modul.",
           "Fiecare evaluare se poate sustine de 2 ori daca nu se reuseste promovarea acestora din prima.",
           "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
@@ -73,12 +73,12 @@ const TABLE_DATA = [
           "Se vor aloca 36 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
           "Predare in limba romana.",
           "Suport teoretic in limba engleza.",
-          "Cursul contine 2 evaluari, cate o evaluarea la finalul fiecarui modul.",
+          "Cursul contine 2 evaluari, cate o evaluare la finalul fiecarui modul.",
           "Fiecare evaluare se poate sustine de 2 ori daca nu se reuseste promovarea acestora din prima.",
           "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",
           "Pentru definirea unui plan personalizat de rate, va rugam sa ne contactati la sales@codensoftwareacademy.com.",
-          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata."
+          "In primele doua saptamani de curs, in cazul in care doriti sa va retrageti, veti primi integral suma achitata.",
         ]
     },
     {
@@ -93,7 +93,7 @@ const TABLE_DATA = [
           "Se vor aloca 36 de ore doar pentru dezvoltarea gandirii analitice cu ajutorul problemelor de algoritmica.",
           "Predare in limba engleza.",
           "Suport teoretic in limba engleza.",
-          "Cursul contine 2 evaluari, cate o evaluarea la finalul fiecarui modul.",
+          "Cursul contine 2 evaluari, cate o evaluare la finalul fiecarui modul.",
           "Fiecare evaluare se poate sustine de 2 ori daca nu se reuseste promovarea acestora din prima.",
           "Plata integrala a cursului inainte de inceperea cursului: 850 Euro.",
           "Plata in rate: 50 Euro avans (inainte de inceperea cursului) si 4 rate de 200 Euro (fiecare rata se plateste la 3 saptamani pe parcursul cursului).",

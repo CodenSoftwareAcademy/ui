@@ -8,7 +8,7 @@ const ADVANTAGES_DATA = [
     "Vei folosi un stack modern de tehnologii precum React, Redux, Node, Express sau MongoDB.",
     "Vei dezvolta in cadrul cursului proiecte pe care le poti adauga in portofoliul personal si prezenta la interviurile de angajare.",
     "Vei avea parte de traineri cu experienta atat in predarea conceptelor tehnice cat si in aplicarea lor in industrie.",
-    "Pe langa predarea notiunilor teoretice, trainerii te vor indruma cu sfaturi atat tehnice cat si non-tehnice legate de urmatorii pasi in cariera de Developer.",
+    "Pe langa predarea notiunilor teoretice, trainerii te vor indruma cu sfaturi atat tehnice cat si non-tehnice legate de urmatorii pasi in cariera de programator.",
     "Vei avea parte de exercitii algoritmice la fiecare sedinta pentru a-ti dezvolta gandirea analitica.",
     "Vei invata cum sa cauti informatii tehnice relevante atunci cand ajungi intr-un impas in dezvoltarea aplicatiei tale.",
     "Toate sedintele vor fi inregistrate si puse la dispozitia ta pentru a le putea consulta de cate ori consideri ca este nevoie.",

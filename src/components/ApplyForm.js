@@ -10,32 +10,32 @@ const TABLE_DATA = [
   {
       name: "Full-Stack Javascript Developer - Romana",
       start: "01/09/2020",
-      duration: "12 weeks",
-      price: "4000 RON"
+      duration: "12 saptamani",
+      price: "800 Euro"
   },
   {
       name: "Frontend Developer - Romana",
       start: "01/09/2020",
-      duration: "7 weeks",
-      price: "2500 RON"
+      duration: "7 saptamani",
+      price: "500 Euro"
   },
   {
       name: "Full-Stack Javascript Developer - Romana",
       start: "05/01/2021",
-      duration: "12 weeks",
-      price: "4000 RON"
+      duration: "12 saptamani",
+      price: "800 Euro"
   },
   {
       name: "Full-Stack Javascript Developer - Engleza",
-      start: "To be announced",
-      duration: "12 weeks",
-      price: "4000 RON"
+      start: "Urmeaza sa fie anuntat",
+      duration: "12 saptamani",
+      price: "800 Euro"
   },
   {
       name: "Frontend Developer - Engleza",
-      start: "To be announced",
-      duration: "7 weeks",
-      price: "2500 RON"
+      start: "Urmeaza sa fie anuntat",
+      duration: "7 saptamani",
+      price: "500 Euro"
   },
 ];
 
