@@ -21,6 +21,9 @@
   .nav.smaller .collapse {
     background-color: #fafafa;
     padding: 10px;
+  }
+  .nav.smaller .collapse.show {
+
     border-bottom: 1px solid #ccc;
   }
 

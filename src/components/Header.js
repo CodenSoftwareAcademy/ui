@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../media/csa.png';
-import {Button, Nav, Navbar} from 'react-bootstrap';
+import { Nav, Navbar} from 'react-bootstrap';
 
 const HOME = 'Acasa';
 const APPLY_BUTTON = 'Aplica!';

@@ -118,8 +118,8 @@ class ApplyForm extends React.Component {
                 ))}
               </Form.Control>
             </Form.Group>
-            <Form.Group onChange={this.onChange} className={this.state.source==SOURCE_DATA[SOURCE_DATA.length-2] || this.state.source==SOURCE_DATA[SOURCE_DATA.length-1] ? 'source-show' : 'source-hide'} controlId="sourcemsg">
-                <Form.Control type="text" placeholder={this.state.source==SOURCE_DATA[SOURCE_DATA.length-2]? SOURCE_FRIEND : SOURCE_OTHER} />
+            <Form.Group onChange={this.onChange} className={this.state.source===SOURCE_DATA[SOURCE_DATA.length-2] || this.state.source===SOURCE_DATA[SOURCE_DATA.length-1] ? 'source-show' : 'source-hide'} controlId="sourcemsg">
+                <Form.Control type="text" placeholder={this.state.source===SOURCE_DATA[SOURCE_DATA.length-2]? SOURCE_FRIEND : SOURCE_OTHER} />
             </Form.Group>
             <Button type="button" onClick={this.sendForm}>
                 {SUBMIT_BTN}

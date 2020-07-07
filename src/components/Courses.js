@@ -1,7 +1,7 @@
 import React from 'react';
 import './Courses.css';
 import './Acordion.css';
-import {Button, Table} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import title from '../media/title.svg';
 import start from '../media/start.svg';
 import duration from '../media/duration.svg';
@@ -12,13 +12,13 @@ import { Accordion, Card} from 'react-bootstrap';
 
 const CLICK_DETAILS = 'Click for details';
 
-const TABLE_HEADER = [
-    "Course",
-    "Start date",
-    "Durata",
-    "Price",
-    "Program"
-];
+// const TABLE_HEADER = [
+//     "Course",
+//     "Start date",
+//     "Durata",
+//     "Price",
+//     "Program"
+// ];
 
 const TABLE_DATA = [
     {
@@ -133,18 +133,18 @@ function Courses() {
           <Card.Header>
             <Accordion.Toggle as={Button} variant="p" eventKey={i}>
               <div className="accordion-course">
-                <div className="course-title"><img src={title}/>{item.name}</div>
-                <div className="course-start"><img src={start}/>&nbsp;{item.start}</div>
-                <div className="course-duration"><img src={duration}/>{item.duration}</div>
-                <div className="course-price"><img src={price}/>&nbsp;{item.price} &euro;</div>
-                <div className="course-schedule"><img src={schedule}/>&nbsp;<div>{item.schedule[0]}<br/>{item.schedule[1]}<br/>{item.schedule[2]}</div></div>
+                <div className="course-title"><img src={title} alt="title"/>{item.name}</div>
+                <div className="course-start"><img src={start} alt="start"/>&nbsp;{item.start}</div>
+                <div className="course-duration"><img src={duration} alt="duration"/>{item.duration}</div>
+                <div className="course-price"><img src={price} alt="price"/>&nbsp;{item.price} &euro;</div>
+                <div className="course-schedule"><img src={schedule} alt="schedule"/>&nbsp;<div>{item.schedule[0]}<br/>{item.schedule[1]}<br/>{item.schedule[2]}</div></div>
               </div>
-              <small><img src={downarrow}/>&nbsp;{CLICK_DETAILS}&nbsp;<img src={downarrow}/></small>
+              <small><img src={downarrow} alt="downarrow"/>&nbsp;{CLICK_DETAILS}&nbsp;<img src={downarrow} alt="downarrow"/></small>
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey={i}>
             <Card.Body>&nbsp;&nbsp;<ul>{item.details.map((item,i) => (
-              (i == 3 || i == 7 || i == 8 || i == 10) ? <li key={i}><b>{item}</b></li> : <li key={i}>{item}</li>
+              (i === 3 || i === 7 || i === 8 || i === 10) ? <li key={i}><b>{item}</b></li> : <li key={i}>{item}</li>
               ))}</ul>
             </Card.Body>
           </Accordion.Collapse>
