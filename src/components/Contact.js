@@ -7,9 +7,9 @@ import ContactForm from '../components/ContactForm';
 
 const MAIL_CONTACT = 'contact@codensoftwareacademy.com';
 const PHONE_CONTACT = '(+40) 740 048 042';
-const CORPORATE_MSG = 'Pentru oferta corporate personalizata';
+const CORPORATE_MSG = 'For customized corporate offer';
 const CORPORATE_MAIL = 'corporate@codensoftwareacademy.com';
-const CONTACT_HEAD = 'Sau utilizeaza formularul de contact de mai jos';
+const CONTACT_HEAD = 'Or use the contact form from below';
 
 function Contact() {
     return(

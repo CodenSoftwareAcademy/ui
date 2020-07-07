@@ -22,12 +22,12 @@ function App() {
         <Headline />
       </div>
       <div id="about" className="section">
-        <Chapter name="Despre Noi"/>
+        <Chapter name="About Us"/>
         <About />
         {/* <Stack /> */}
       </div>
       <div id="roadmap" className="section">
-        <Chapter name="Structura Cursului"/>
+        <Chapter name="Course Structure"/>
         <Roadmap />
       </div>
       {/* <div className="section">
@@ -35,19 +35,19 @@ function App() {
         <Week />
       </div> */}
       <div id="courses" className="section">
-        <Chapter name="Calendar Cursuri"/>
+        <Chapter name="Calendar"/>
         <Courses />
       </div>
       <div id="apply" className="section">
-        <Chapter name="Procesul de Aplicare"/>
+        <Chapter name="Application Process"/>
         <Apply />
       </div>
       <div id="review" className="section">
-        <Chapter name="Ce Spun Studentii" />
+        <Chapter name="Student Feedback" />
         <Feedback />
       </div>
       <div id="faq" className="section">
-        <Chapter name="Intrebari Frecvente"/>
+        <Chapter name="FAQ"/>
         <Faq />
       </div>
       <div id="contact" className="section">

@@ -3,12 +3,12 @@ import './Header.css';
 import logo from '../media/csa.png';
 import { Nav, Navbar} from 'react-bootstrap';
 
-const HOME = 'Acasa';
-const APPLY_BUTTON = 'Aplica!';
+const HOME = 'Home';
+const APPLY_BUTTON = 'Apply!';
 
 const menu = [
-  {link:'about', title:'Despre Noi'},
-  {link:'roadmap', title:'Structura Cursului'},
+  {link:'about', title:'About Us'},
+  {link:'roadmap', title:'Course Structure'},
   {link:'courses', title:'Calendar'},
   {link:'contact', title:'Contact'}
 ]

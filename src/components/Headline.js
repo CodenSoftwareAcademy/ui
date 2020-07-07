@@ -6,12 +6,12 @@ import './Headline.css';
 // import location from '../media/online2.svg';
 import title from '../media/star-white.svg';
 
-const HEADLINE_NAME = 'Curs Full Stack Javascript Developer';
+const HEADLINE_NAME = 'Full Stack Javascript Developer Course';
 const HEADLINE_TYPE = 'Part-time [ONLINE]';
-const HEADLINE_DETAILS = '12 saptamani de curs, 3 zile pe saptamana';
+const HEADLINE_DETAILS = '12 course weeks, 3 days per week';
 const SUBTITLE = [
-  'Devino Junior Full Stack Developer in doar 12 saptamani fara a fi nevoie de experienta anterioara.',
-  'Vei invata sa dezvolti atat aplicatii web cat si API-uri direct de la tine de acasa'
+  'Become a Junior Full Stack Developer in just 12 weeks without any prior experience.',
+  'You will learn to develop both web applications and APIs straight from your home.'
 ]
 
 function Headline() {

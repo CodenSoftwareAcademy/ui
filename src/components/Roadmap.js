@@ -4,8 +4,8 @@ import frontend from '../media/frontend.png';
 import backend from '../media/backend.png';
 import bullet from '../media/bullet.png';
 
-const FRONTEND_TITLE = 'Modulul de Frontend';
-const BACKEND_TITLE = 'Modulul de Backend';
+const FRONTEND_TITLE = 'Frontend Module';
+const BACKEND_TITLE = 'Backend Module';
 
 function Roadmap() {
     return(
