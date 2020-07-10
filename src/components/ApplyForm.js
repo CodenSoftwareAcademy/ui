@@ -6,6 +6,9 @@ const FAIL_MSG = "Ceva nu a mers bine. Mai incearca o data!";
 const SUBMIT_BTN = 'Submit';
 const SENDING = "Trimitere mesaj...";
 const URL = "https://csa-server.herokuapp.com/student";
+const AGREEMENT_MSG = "Am citit si sunt de acord cu ";
+const AGREEMENT_LINK = "Politica de confidentialitate";
+const AGREEMENT_REQ = 'Acceptati politica de confidentialitate pentru a putea continua';
 const TABLE_DATA = [
   {
       name: "Full-Stack Javascript Developer - Romana",
@@ -56,26 +59,32 @@ class ApplyForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sending: false
+      sending: false,
+      agreed: false,
+      agreementNotChecked: true
     }
   }
 
   sendForm = () => {
-    this.setState({sending: true})
-    fetch(URL,
-      {
-          method : 'POST',
-          headers : new Headers({
-              'Content-type': 'application/json'
-          }),
-          body: JSON.stringify(this.state)
-      })
-      .then( res => 
-          res.ok 
-          ? this.setState({submitForm: "success", sending: false})
-          : this.setState({submitForm: "fail", sending: false})
-      )
-      .catch(err => this.setState({submitForm: "fail", sending: false}))
+    if(this.state.agreed){
+      this.setState({sending: true, agreementNotChecked: true})
+      fetch(URL,
+        {
+            method : 'POST',
+            headers : new Headers({
+                'Content-type': 'application/json'
+            }),
+            body: JSON.stringify(this.state)
+        })
+        .then( res => 
+            res.ok 
+            ? this.setState({submitForm: "success", sending: false})
+            : this.setState({submitForm: "fail", sending: false})
+        )
+        .catch(err => this.setState({submitForm: "fail", sending: false}))
+    } else {
+      this.setState({agreementNotChecked: false})
+    }
 }
 
   onChange = e => {
@@ -85,7 +94,7 @@ class ApplyForm extends React.Component {
   }
 
     render() {
-      console.log(this.state)
+      // console.log(this.state)
         return (
           <Form>
             <Form.Group controlId="lastname">
@@ -121,6 +130,14 @@ class ApplyForm extends React.Component {
             <Form.Group onChange={this.onChange} className={this.state.source===SOURCE_DATA[SOURCE_DATA.length-2] || this.state.source===SOURCE_DATA[SOURCE_DATA.length-1] ? 'source-show' : 'source-hide'} controlId="sourcemsg">
                 <Form.Control type="text" placeholder={this.state.source===SOURCE_DATA[SOURCE_DATA.length-2]? SOURCE_FRIEND : SOURCE_OTHER} />
             </Form.Group>
+            <Form.Check 
+              type={'checkbox'}
+              id={`default-checkbox`}
+              checked={this.state.agreed}
+              onChange={() => this.setState({agreed: !this.state.agreed})}
+              label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/termeni-si-conditii.pdf'}>{AGREEMENT_LINK}</a></span>}
+            />
+            {!this.state.agreementNotChecked &&<span className="agreementNotChecked"> {AGREEMENT_REQ}</span>}
             <Button type="button" onClick={this.sendForm}>
                 {SUBMIT_BTN}
             </Button>

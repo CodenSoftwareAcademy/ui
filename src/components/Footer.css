@@ -26,3 +26,12 @@
     border-radius: 20%;
     padding: 5px;
   }
+
+  .footer .gdpr a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 0.8em;
+  }
+  .footer .gdpr a:hover {
+    text-decoration: underline;
+  }

@@ -5,18 +5,24 @@ const SUCCESS_MSG = "Mesajul tau a fost trimis cu succes! Vei primi un raspuns i
 const FAIL_MSG = "Ceva nu a mers bine. Mai incearca o data!";
 const SUBMIT_BTN = 'Submit';
 const SENDING = "Trimitere mesaj...";
+const AGREEMENT_MSG = "Am citit si sunt de acord cu ";
+const AGREEMENT_LINK = "Politica de confidentialitate";
+const AGREEMENT_REQ = 'Acceptati politica de confidentialitate pentru a putea continua';
 const URL = "https://csa-server.herokuapp.com/contact";
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sending: false
+      sending: false,
+      agreed: false,
+      agreementNotChecked: true
     }
   }
 
   sendForm = () => {
-      this.setState({sending: true})
+    if(this.state.agreed){
+        this.setState({sending: true, agreementNotChecked: true})
       fetch(URL,
         {
             method : 'POST',
@@ -31,6 +37,9 @@ class ContactForm extends React.Component {
             : this.setState({submitForm: "fail", sending: false})
         )
         .catch(err => this.setState({submitForm: "fail", sending: false}))
+    } else {
+        this.setState({agreementNotChecked: false})
+      }
   }
 
   onChange = e => {
@@ -40,7 +49,7 @@ class ContactForm extends React.Component {
   }
 
     render() {
-      console.log(this.state)
+    //   console.log(this.state)
         return (
             <Form>
                 <Form.Group controlId="name">
@@ -56,7 +65,14 @@ class ContactForm extends React.Component {
                 <Form.Group controlId="message">
                     <Form.Control onChange={this.onChange} as="textarea" rows="6" placeholder="Mesaj" />
                 </Form.Group>
-                
+                <Form.Check 
+                    type={'checkbox'}
+                    id={`default-checkbox`}
+                    checked={this.state.agreed}
+                    onChange={() => this.setState({agreed: !this.state.agreed})}
+                    label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/termeni-si-conditii.pdf'}>{AGREEMENT_LINK}</a></span>}
+                />
+            {!this.state.agreementNotChecked &&<span className="agreementNotChecked"> {AGREEMENT_REQ}</span>}
                 <Button type="button" onClick={this.sendForm}>
                     {SUBMIT_BTN}
                 </Button>

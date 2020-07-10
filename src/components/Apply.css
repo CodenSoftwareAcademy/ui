@@ -70,6 +70,11 @@
     margin-top: 20px;
   }
 
+  .agreementNotChecked{
+    font-size: 0.8em;
+    color: tomato;
+  }
+
   @media only screen and (max-width: 1024px) {
     .apply-process {
         width: 90%;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import './App.css';
 import Faq from './components/Faq';
 import Courses from './components/Courses';
@@ -14,10 +15,18 @@ import Feedback from './components/Feedback';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+function initializeReactGA() {
+  ReactGA.initialize('UA-171787640-1');
+  ReactGA.pageview('/');
+}
+
 function App() {
+  React.useEffect(() => {
+    initializeReactGA()
+  }, [])
   return (
     <div className="site-container">
-      <div className="section-a">
+      <div className="section-a">)
         <Header />
         <Headline />
       </div>
