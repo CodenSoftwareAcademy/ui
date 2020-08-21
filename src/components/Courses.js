@@ -134,7 +134,18 @@ function Courses() {
             <Accordion.Toggle as={Button} variant="p" eventKey={i}>
               <div className="accordion-course">
                 <div className="course-title"><img src={title} alt="title"/>{item.name}</div>
-                <div className="course-start"><img src={start} alt="start"/>&nbsp;{item.start}</div>
+
+                {item.start === "01/09/2020" ? 
+                  <div className="course-start"><img src={start} alt="start"/>
+                  &nbsp;
+                    <div style={{display: "flex", flexDirection: "column"}}>
+                      <del>{item.start}</del>
+                      <b>{"15/09/2020"}</b>
+                    </div>
+                  </div> :
+                  <div className="course-start"><img src={start} alt="start"/>&nbsp;{item.start}</div> 
+                }
+
                 <div className="course-duration"><img src={duration} alt="duration"/>{item.duration}</div>
                 <div className="course-price"><img src={price} alt="price"/>&nbsp;{item.price} &euro;</div>
                 <div className="course-schedule"><img src={schedule} alt="schedule"/>&nbsp;<div>{item.schedule[0]}<br/>{item.schedule[1]}<br/>{item.schedule[2]}</div></div>

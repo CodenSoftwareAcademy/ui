@@ -12,13 +12,13 @@ const AGREEMENT_REQ = 'Acceptati politica de confidentialitate pentru a putea co
 const TABLE_DATA = [
   {
       name: "Full-Stack Javascript Developer - Romana",
-      start: "01/09/2020",
+      start: "15/09/2020",
       duration: "12 saptamani",
-      price: "800 Euro"
+      price: "850 Euro"
   },
   {
       name: "Frontend Developer - Romana",
-      start: "01/09/2020",
+      start: "15/09/2020",
       duration: "7 saptamani",
       price: "500 Euro"
   },
@@ -26,13 +26,13 @@ const TABLE_DATA = [
       name: "Full-Stack Javascript Developer - Romana",
       start: "05/01/2021",
       duration: "12 saptamani",
-      price: "800 Euro"
+      price: "850 Euro"
   },
   {
       name: "Full-Stack Javascript Developer - Engleza",
       start: "Urmeaza sa fie anuntat",
       duration: "12 saptamani",
-      price: "800 Euro"
+      price: "850 Euro"
   },
   {
       name: "Frontend Developer - Engleza",
@@ -113,7 +113,7 @@ class ApplyForm extends React.Component {
               <Form.Control onChange={this.onChange} as="select">
                 <option>{COURSE_DEFAULT_OPTION}</option>
                 {TABLE_DATA.map((item, i) => (
-                  <option key={i}>{`${item.name} -> ${item.start}`}</option>
+                  <option key={i}>{`${item.name} -> ${item.start} [Pret: ${item.price}]`}</option>
                 ))}
               </Form.Control>
             </Form.Group>
@@ -135,7 +135,7 @@ class ApplyForm extends React.Component {
               id={`default-checkbox`}
               checked={this.state.agreed}
               onChange={() => this.setState({agreed: !this.state.agreed})}
-              label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/termeni-si-conditii.pdf'}>{AGREEMENT_LINK}</a></span>}
+              label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/politica-de-confidentialitate.pdf'}>{AGREEMENT_LINK}</a></span>}
             />
             {!this.state.agreementNotChecked &&<span className="agreementNotChecked"> {AGREEMENT_REQ}</span>}
             <Button type="button" onClick={this.sendForm}>

@@ -70,7 +70,7 @@ class ContactForm extends React.Component {
                     id={`default-checkbox`}
                     checked={this.state.agreed}
                     onChange={() => this.setState({agreed: !this.state.agreed})}
-                    label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/termeni-si-conditii.pdf'}>{AGREEMENT_LINK}</a></span>}
+                    label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/politica-de-confidentialitate.pdf'}>{AGREEMENT_LINK}</a></span>}
                 />
             {!this.state.agreementNotChecked &&<span className="agreementNotChecked"> {AGREEMENT_REQ}</span>}
                 <Button type="button" onClick={this.sendForm}>
