@@ -6,17 +6,23 @@ const FAIL_MSG = "Something went wrong. Try again!";
 const SUBMIT_BTN = 'Submit';
 const SENDING = "Sending message...";
 const URL = "https://csa-server.herokuapp.com/contact";
+const AGREEMENT_MSG = "I have read and agree with ";
+const AGREEMENT_LINK = "Privacy policy";
+const AGREEMENT_REQ = 'Accept the privacy policy in order to continue';
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sending: false
-    }
+        sending: false,
+        agreed: false,
+        agreementNotChecked: true
+      }
   }
 
   sendForm = () => {
-      this.setState({sending: true})
+    if(this.state.agreed){
+        this.setState({sending: true, agreementNotChecked: true})
       fetch(URL,
         {
             method : 'POST',
@@ -31,6 +37,9 @@ class ContactForm extends React.Component {
             : this.setState({submitForm: "fail", sending: false})
         )
         .catch(err => this.setState({submitForm: "fail", sending: false}))
+    } else {
+        this.setState({agreementNotChecked: false})
+      }
   }
 
   onChange = e => {
@@ -57,6 +66,14 @@ class ContactForm extends React.Component {
                     <Form.Control onChange={this.onChange} as="textarea" rows="6" placeholder="Message" />
                 </Form.Group>
                 
+                <Form.Check 
+                    type={'checkbox'}
+                    id={`default-checkbox`}
+                    checked={this.state.agreed}
+                    onChange={() => this.setState({agreed: !this.state.agreed})}
+                    label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/privacy-policy.pdf'}>{AGREEMENT_LINK}</a></span>}
+                />
+            {!this.state.agreementNotChecked &&<span className="agreementNotChecked"> {AGREEMENT_REQ}</span>}
                 <Button type="button" onClick={this.sendForm}>
                     {SUBMIT_BTN}
                 </Button>

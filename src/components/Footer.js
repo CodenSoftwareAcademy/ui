@@ -8,7 +8,13 @@ function Footer() {
     return(
         <div className="footer">
             <div className="copyright">
-                <small> Copyright &copy; {new Date().getFullYear()} Coden Software Academy. All Rights Reserved.</small>
+                <small> Copyright &copy; {new Date().getFullYear()} Coden Software Academy.</small>
+            </div>
+            <div className="gdpr">
+            <a href={process.env.PUBLIC_URL + '/terms-and-conditions.pdf'}>Terms and Conditions</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href={process.env.PUBLIC_URL + '/privacy-policy.pdf'}>Privacy Policy</a>
+            
             </div>
             {/* <div className="social-media">
                 <img src={facebook} alt="facebook-icon"/>

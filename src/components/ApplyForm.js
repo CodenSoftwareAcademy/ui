@@ -6,16 +6,19 @@ const FAIL_MSG = "Something went wrong. Try again!";
 const SUBMIT_BTN = 'Submit';
 const SENDING = "Sending message...";
 const URL = "https://csa-server.herokuapp.com/student";
+const AGREEMENT_MSG = "I have read and agree with ";
+const AGREEMENT_LINK = "Privacy policy";
+const AGREEMENT_REQ = 'Accept the privacy policy in order to continue';
 const TABLE_DATA = [
   {
       name: "Full-Stack Javascript Developer - Romanian",
-      start: "01/09/2020",
+      start: "15/09/2020",
       duration: "12 weeks",
-      price: "800 Euro"
+      price: "850 Euro"
   },
   {
       name: "Frontend Developer - Romanian",
-      start: "01/09/2020",
+      start: "15/09/2020",
       duration: "7 weeks",
       price: "500 Euro"
   },
@@ -23,13 +26,13 @@ const TABLE_DATA = [
       name: "Full-Stack Javascript Developer - Romanian",
       start: "05/01/2021",
       duration: "12 weeks",
-      price: "800 Euro"
+      price: "850 Euro"
   },
   {
       name: "Full-Stack Javascript Developer - English",
       start: "To be announced",
       duration: "12 weeks",
-      price: "800 Euro"
+      price: "850 Euro"
   },
   {
       name: "Frontend Developer - English",
@@ -40,7 +43,7 @@ const TABLE_DATA = [
 ];
 
 const SOURCE_DATA = [
-  'Where did you hear about us?',
+  'From where did you hear about us?',
       'Social Media (Facebook, Instagram, etc.)',
       'Google',
       'Recommendation',
@@ -56,26 +59,32 @@ class ApplyForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sending: false
+      sending: false,
+      agreed: false,
+      agreementNotChecked: true
     }
   }
 
   sendForm = () => {
-    this.setState({sending: true})
-    fetch(URL,
-      {
-          method : 'POST',
-          headers : new Headers({
-              'Content-type': 'application/json'
-          }),
-          body: JSON.stringify(this.state)
-      })
-      .then( res => 
-          res.ok 
-          ? this.setState({submitForm: "success", sending: false})
-          : this.setState({submitForm: "fail", sending: false})
-      )
-      .catch(err => this.setState({submitForm: "fail", sending: false}))
+    if(this.state.agreed){
+      this.setState({sending: true, agreementNotChecked: true})
+      fetch(URL,
+        {
+            method : 'POST',
+            headers : new Headers({
+                'Content-type': 'application/json'
+            }),
+            body: JSON.stringify(this.state)
+        })
+        .then( res => 
+            res.ok 
+            ? this.setState({submitForm: "success", sending: false})
+            : this.setState({submitForm: "fail", sending: false})
+        )
+        .catch(err => this.setState({submitForm: "fail", sending: false}))
+    } else {
+      this.setState({agreementNotChecked: false})
+    }
 }
 
   onChange = e => {
@@ -104,7 +113,7 @@ class ApplyForm extends React.Component {
               <Form.Control onChange={this.onChange} as="select">
                 <option>{COURSE_DEFAULT_OPTION}</option>
                 {TABLE_DATA.map((item, i) => (
-                  <option key={i}>{`${item.name} -> ${item.start}`}</option>
+                  <option key={i}>{`${item.name} -> ${item.start} [Price: ${item.price}]`}</option>
                 ))}
               </Form.Control>
             </Form.Group>
@@ -121,6 +130,14 @@ class ApplyForm extends React.Component {
             <Form.Group onChange={this.onChange} className={this.state.source===SOURCE_DATA[SOURCE_DATA.length-2] || this.state.source===SOURCE_DATA[SOURCE_DATA.length-1] ? 'source-show' : 'source-hide'} controlId="sourcemsg">
                 <Form.Control type="text" placeholder={this.state.source===SOURCE_DATA[SOURCE_DATA.length-2]? SOURCE_FRIEND : SOURCE_OTHER} />
             </Form.Group>
+            <Form.Check 
+              type={'checkbox'}
+              id={`default-checkbox`}
+              checked={this.state.agreed}
+              onChange={() => this.setState({agreed: !this.state.agreed})}
+              label={<span>{AGREEMENT_MSG} <a href={process.env.PUBLIC_URL + '/privacy-policy.pdf'}>{AGREEMENT_LINK}</a></span>}
+            />
+            {!this.state.agreementNotChecked &&<span className="agreementNotChecked"> {AGREEMENT_REQ}</span>}
             <Button type="button" onClick={this.sendForm}>
                 {SUBMIT_BTN}
             </Button>
