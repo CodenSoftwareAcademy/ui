@@ -1,10 +1,10 @@
 import React from 'react';
 import {Form, Button} from 'react-bootstrap';
 
-const SUCCESS_MSG = "Mesajul tau a fost trimis cu succes! Vei primi un raspuns intr-un timp cat mai scurt.";
-const FAIL_MSG = "Ceva nu a mers bine. Mai incearca o data!";
+const SUCCESS_MSG = "Your message has been sent successfully! You will receive an answer as soon as possible.";
+const FAIL_MSG = "Something went wrong. Try again!";
 const SUBMIT_BTN = 'Submit';
-const SENDING = "Trimitere mesaj...";
+const SENDING = "Sending message...";
 const URL = "https://csa-server.herokuapp.com/contact";
 
 class ContactForm extends React.Component {
@@ -44,17 +44,17 @@ class ContactForm extends React.Component {
         return (
             <Form>
                 <Form.Group controlId="name">
-                    <Form.Control onChange={this.onChange} type="text" placeholder="Nume si Prenume" />
+                    <Form.Control onChange={this.onChange} type="text" placeholder="Name" />
                 </Form.Group>
                 <Form.Group controlId="email">
-                    <Form.Control onChange={this.onChange} type="email" placeholder="Adresa Email" />
+                    <Form.Control onChange={this.onChange} type="email" placeholder="Email" />
                 </Form.Group>
                 <Form.Group controlId="phone">
-                    <Form.Control onChange={this.onChange} type="text" placeholder="Numar de telefon" />
+                    <Form.Control onChange={this.onChange} type="text" placeholder="Phone number" />
                 </Form.Group>
     
                 <Form.Group controlId="message">
-                    <Form.Control onChange={this.onChange} as="textarea" rows="6" placeholder="Mesaj" />
+                    <Form.Control onChange={this.onChange} as="textarea" rows="6" placeholder="Message" />
                 </Form.Group>
                 
                 <Button type="button" onClick={this.sendForm}>

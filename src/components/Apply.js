@@ -6,12 +6,12 @@ import b3 from '../media/bullet31.png';
 import ApplyForm from './ApplyForm';
 
 const APPLY_STEPS = [
-    "Completezi formularul de mai jos cu datele tale de contact si alegi cursul care ti se potriveste.",
-    "Noi te sunam pentru a-ti detalia viziunea noastra si pentru a vedea daca este potrivita pentru tine.",
-    "Felicitari, ai fost admis!",
-    "Pentru a te pregati de inceperea cursului, iti vom pune la dispozitie un material pregatitor."
+    "Fill in the form below with your contact details and choose the course that suits you.",
+    "We call you to detail our vision and to see if it is right for you.",
+    "Congratulations, you have been admitted!",
+    "To prepare for the start of the course, we will provide you with a preparatory material."
 ]
-const APPLY_HEAD = "Aplica acum!";
+const APPLY_HEAD = "Apply now!";
 
 class Apply extends React.Component {
     render() {

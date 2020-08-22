@@ -5,16 +5,16 @@ import {Button, Accordion, Card} from 'react-bootstrap';
 
 const faqArray = [
     {
-        question: "Acest curs imi garanteaza un job de programator?",
-        answer: "Cursul nu garanteaza un job ci asigura cunostintele tehnice necesare unui job de programator junior. Ne concentram pe dezvoltarea modului de gandire analitica si pe obisnuirea studentilor de a cauta singuri informatia de care au nevoie. Pe langa cunostintele tehnice, ajutam studentii sa se pregateasca pentru interviuri prin asistenta la pregatirea CV-ului si prin simularea unor interviuri tehnice."
+        question: "Does this course guarantee me a job as a programmer?",
+        answer: "The course does not guarantee a job but provides the technical knowledge necessary for a junior programmer job. We focus on developing analytical thinking and getting students used to looking for the information they need on their own. In addition to technical knowledge, we help students prepare for interviews by assisting with CV preparation and by simulating technical interviews."
     },
     {
-        question: "Ce obtin in urma cursului?",
-        answer: "Dupa parcurgerea cursului veti obtine un certificat de absolvire care va contine toate notiunile invatate. Aceste notiuni ce sunt necesare pentru un post de programator web junior le veti exersa in cadrul fiecarei sedinte in intervalul de exercitii practice precum si in cadrul proiectelor pe care le veti dezvolta in cadrul cursului. Pe langa aceste cunostinte, veti obtine o gandire algoritmica si veti invata cum sa va descurcati singuri in rezolvarea problemelor."
+        question: "What do I get after the completion of the course?",
+        answer: "After completing the course you will obtain a graduation certificate that will contain all the concepts learned. These notions that are necessary for a position of junior web programmer you will practice in each session during the practical exercises as well as in the projects that you will develop in the course. In addition to this knowledge, you will gain algorithmic thinking and learn how to handle problems on your own."
     },
     {
-        question: "In ce consta pregatirea pentru interviu?",
-        answer: "Pregatirea studentului pentru un interviu de programator consta in simularea unui interviu tehnic cu unul dintre instructorii nostri. Simularea va consta in intrebari despre notiuni teoretice si o parte practica pentru a reproduce cat mai fidel un interviu tehnic real."
+        question: "What is the preparation for the interview?",
+        answer: "Preparing the student for a programmer interview consists in simulating a technical interview with one of our instructors. The simulation will consist of questions about theoretical notions and a practical part to reproduce as accurately as possible a real technical interview."
     }
 ]
 

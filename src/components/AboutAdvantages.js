@@ -2,18 +2,18 @@ import React from 'react';
 import bullet from '../media/bullet.png';
 
 const ADVANTAGES_DATA = [
-    "Ai posibilitatea de a incepe o cariera intr-unul dintre cele mai bine platite domenii de pe piata.",
-    "Nu este nevoie sa ai cunostinte in IT pentru a incepe cursul. Tot ce ai nevoie este determinarea de a invata si exersa.",
-    "Daca dupa prima saptamana consideri ca acest curs nu este ceea ce iti doresti, te poti retrage si vei primi integral suma platita.",
-    "Vei folosi un stack modern de tehnologii precum React, Redux, Node, Express sau MongoDB.",
-    "Vei dezvolta in cadrul cursului proiecte pe care le poti adauga in portofoliul personal si prezenta la interviurile de angajare.",
-    "Vei avea parte de traineri cu experienta atat in predarea conceptelor tehnice cat si in aplicarea lor in industrie.",
-    "Pe langa predarea notiunilor teoretice, trainerii te vor indruma cu sfaturi atat tehnice cat si non-tehnice legate de urmatorii pasi in cariera de programator.",
-    "Vei avea parte de exercitii algoritmice la fiecare sedinta pentru a-ti dezvolta gandirea analitica.",
-    "Vei invata cum sa cauti informatii tehnice relevante atunci cand ajungi intr-un impas in dezvoltarea aplicatiei tale.",
-    "Toate sedintele vor fi inregistrate si puse la dispozitia ta pentru a le putea consulta de cate ori consideri ca este nevoie.",
-    "Te vom ajuta sa te pregatesti pentru interviuri, prin asistenta la crearea CV-ului precum si prin simularea unui interviu tehnic cu trainerii nostri.",
-    "Dupa terminarea cursului vei putea programa o sedinta gratuita de consultanta cu trainerul tau pentru a te ajuta atat tehnic cat si cu sfaturi non-tehnice."
+    "You have the opportunity to start a career in one of the most well paid fields on the market.",
+    "You do not need to have previous IT knowledge to start the course. All you need is the willingness to learn and practice.",
+    "If after the first week you consider that this course is not what you want, you can withdraw and you will receive a full refund.",
+    "You will use a modern stack of technologies such as React, Redux, Node, Express or MongoDB.",
+    "During the course, you will develop projects that you can add to your personal portfolio and present them at job interviews.",
+    "You will get trainers with experience both in teaching theoretical concepts and in applying them in real projects.",
+    "In addition to teaching theoretical concepts, the instructor will guide you with both technical and non-technical advices on the next steps in your career as a programmer.",
+    "You will have to solve algorithmic exercises in each session to develop your analytical thinking.",
+    "You will learn how to look for relevant technical information when you reach a blocking point in the development of your application.",
+    "All meetings will be recorded and made available to you so that you can consult them as many times as you need.",
+    "We will help you prepare for interviews, by assisting in creating your CV as well as by simulating a technical interview with our trainers.",
+    "After completing the course you will be able to schedule a free consulting session with your trainer to help you both technically and with non-technical advice."
 ]
 
 function AboutAdvantages() {

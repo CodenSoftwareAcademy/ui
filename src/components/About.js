@@ -11,24 +11,24 @@ function About() {
         <div className="about">
             <AboutUs />
 
-            <h3 id="advantage">Avantaje</h3>
+            <h3 id="advantage">Advantages</h3>
             <AboutAdvantages />
 
-            <h3>Cum arata o sedinta obisnuita de curs</h3>
+            <h3>How a regular course day looks like</h3>
             <div className="about-lesson">
             <div className="lesson">
             
                 <div className="lesson-content">
-                <h4>1. Recapitulare</h4>
-                    <p>Fiecare sedinta incepe cu recapitularea conceptelor studiate in sedinta anterioara pentru a ne asigura
-                        ca toti studentii au inteles conceptele predate si pentru a avea raspuns la intrebarile aparute dupa terminarea
-                        sedintei precedente.
+                <h4>1. Recap</h4>
+                    <p>Each session starts with a recap of the concepts studied in the previous day to ensure that 
+                        all students understood the concepts taught and to get answers to the questions that arose 
+                        after completion of the previous day.
                     </p>
-                <h4>2. Notiuni teoretice predate de instructor live</h4>
-                    <p>Prima activitate noua din cadrul unei sedinte de curs este aceea de predare a notiunilor teoretice.
-                        Conceptele sunt predate de catre instructor in cadrul unei sesiuni live, sesiune ce va fi inregistrata
-                         si pusa la dispozitia studentilor pentru a o putea consulta de oricate ori este necesar, cat si pentru 
-                         cazurile cand acestia nu pot asista la sesiunea live.
+                <h4>2. Theoretical concepts presented by the instructor live</h4>
+                    <p>The first new activity in a course session is to teach theoretical concepts. 
+                        The concepts are taught by the instructor in a live session, a session that will be 
+                        recorded and made available to students so that they can consult it whenever necessary, 
+                        as well as for the cases when they cannot attend the live session.
                     </p>
 
                 <img src={gen2} alt="remote training" />
@@ -37,17 +37,18 @@ function About() {
             <div className="about-lesson-img">
                 <img src={gen1} alt="individual training" />
 
-                <h4>3. Exersarea noilor concepte invatate</h4>
-                    <p>Dupa predarea notiunilor teoretice, studentii vor pune in aplicare conceptele predate prin rezolvarea
-                         unui set de exercitii. Dupa terminarea timpului alocat acestor exercitii, instructorul va prezenta 
-                         rezolvarea acestora si va ajuta fiecare student in parte sa inteleaga metoda de rezolvare.
+                <h4>3. Practicing the newly learned concepts</h4>
+                    <p>After presenting the theoretical notions, students will implement those concepts by 
+                        solving a set of exercises. After completing the time allotted for these exercises, 
+                        the instructor will present the solution and will help each student to understand the 
+                        solving method.
                     </p>
-                <h4>4. Exersarea gandirii algoritmice</h4>
-                    <p>Un programator dezvolta algoritmi. Pentru aceasta, are nevoie de o gandire logica si structurata. 
-                        Intrucat acest mod de gandire este extrem de important in acest domeniu, este necesara alocarea
-                        unui interval de timp in cadrul fiecarei sedinte pentru rezolvarea de probleme de algoritmica.
-                        La finalul timpului alocat pentru acest tip de probleme, intructorul va prezenta rezolvarea 
-                        problemelor si va explica fiecarui student in parte metoda de rezolvare.
+                <h4>4. Practicing algorithmic thinking</h4>
+                    <p>A programmer develops algorithms. For that, a logical and structured thinking is needed. 
+                        As this way of thinking is extremely important in this field, allocating a specific time 
+                        interval during each session for solving algorithmic problems is needed. At the end of the time 
+                        allotted for this type of problems, the instructor will present the solution and will explain to 
+                        each student the solving method.
                     </p>
             </div>
             </div>
