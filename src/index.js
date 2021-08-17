@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
+import Maintenance from './components/Maintenance';
 import * as serviceWorker from './serviceWorker';
-
+const underMaintenance = true;
 ReactDOM.render(
   // <React.StrictMode>
-    <App />
+    <Maintenance />
+    // <App />
   // </React.StrictMode>,
   ,document.getElementById('root')
 );
