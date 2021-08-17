@@ -1,0 +1,128 @@
+.maintenance {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../media/cover4-micro.png");
+    background-size: cover;
+    justify-content: center;
+    color: #fafafa;
+  }
+  
+  .maintenance h1 {
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #fafafa;
+  }
+  
+  .details .head-span {
+    display: flex;
+    align-items: center;
+  }
+  .details .head-span img {
+    width: 1.5em;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  
+  .details img {
+    width: 1.2em;
+  }
+  
+  .subtitle {
+    width: 70%;
+    margin-top: 5%;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .subtitle table {
+      margin: 0 auto;
+      text-align: left;
+      
+  }
+  
+  .aux {
+    height: 15%;
+  }
+
+
+@media only screen and (max-width: 1024px) {
+    .maintenance h1 {
+        font-size: 2.4em;
+      }
+      .details {
+          width: 80%;
+      }
+      .details .head-span {
+        font-size: 1em;
+        align-items: flex-start;
+        text-align: center;
+      }
+  
+      .subtitle {
+        width: 80%;
+        margin-top: 15%;
+        font-size: 1.2em;
+        text-align: center;
+      }
+}
+@media only screen and (max-width: 768px) {
+
+    .maintenance {
+
+    background-image: url("../media/cover4-mini.png");
+    }
+    .maintenance h1 {
+        font-size: 2.2em;
+      }
+      .details {
+          width: 80%;
+      }
+      .details .head-span {
+        font-size: 1em;
+        align-items: flex-start;
+        text-align: center;
+      }
+  
+      .subtitle {
+        width: 90%;
+        margin-top: 15%;
+        font-size: 1.1em;
+        text-align: center;
+      }
+}
+
+@media only screen and (max-width: 480px) {
+
+  
+  .maintenance {
+
+    background-image: url("../media/cover4-micro2.png");
+    }
+    .maintenance h1 {
+        font-size: 2em;
+      }
+      .details {
+          width: 80%;
+      }
+      .details .head-span {
+        font-size: 0.8em;
+        align-items: flex-start;
+        text-align: center;
+      }
+  
+      .subtitle {
+        width: 90%;
+        margin-top: 15%;
+        font-size: 1.1em;
+        text-align: center;
+      }
+}
+
